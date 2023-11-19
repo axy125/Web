@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+  <title>猜数字游戏</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(img/3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .column {
+    flex-basis: 33.33%;
+    text-align: center;
+    padding: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 80px;
+  }
+  .button:hover {
+    background-color: #45a049;
+  }
+  .message {
+    margin-bottom: 10px;
+  }
+  .number-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .number {
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 20px;
+    width: 80px;
+  }
+  .number:hover {
+    background-color: #d0d0d0;
+  }
+  .remaining-guesses {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="column">
+      <h3>猜测信息:</h3>
+      <div class="message" id="message"></div>
+    </div>
+    <div class="column">
+      <h3>输入数字:</h3>
+      <div id="guess-number"></div>
+    </div>
+    <div class="column">
+      <h3>选择数字:</h3>
+      <div class="number-grid">
+        <button onclick="selectNumber(0)" class="number">0</button>
+        <button onclick="selectNumber(1)" class="number">1</button>
+        <button onclick="selectNumber(2)" class="number">2</button>
+        <button onclick="selectNumber(3)" class="number">3</button>
+        <button onclick="selectNumber(4)" class="number">4</button>
+        <button onclick="selectNumber(5)" class="number">5</button>
+        <button onclick="selectNumber(6)" class="number">6</button>
+        <button onclick="selectNumber(7)" class="number">7</button>
+        <button onclick="selectNumber(8)" class="number">8</button>
+        <button onclick="selectNumber(9)" class="number">9</button>
+        <button onclick="deleteNumber()" class="number">删除</button>
+        <button onclick="makeGuess()" class="button">提交</button>
+        <div class="remaining-guesses" id="remaining-guesses"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var targetNumber;
+    var remainingGuesses;
+    var selectedNumber = "";
+    startGame();
+    function startGame() {
+      targetNumber = Math.floor(Math.random() * 51);
+      remainingGuesses = 5;
+      selectedNumber = "";
+      updateGuessInfo();
+      updateRemainingGuesses();
+      document.getElementById("message").innerText = "";
+    }
+    function updateGuessInfo() {
+      document.getElementById("guess-number").innerText = selectedNumber;
+    }
+    function updateRemainingGuesses() {
+      document.getElementById("remaining-guesses").innerText =
+        "剩余次数: " + remainingGuesses;
+    }
+    function selectNumber(number) {
+      if (selectedNumber.length < 2) {
+        selectedNumber += number;
+        updateGuessInfo();
+      }
+    }
+    function deleteNumber() {
+      if (selectedNumber.length > 0) {
+        selectedNumber = selectedNumber.slice(0, -1);
+        updateGuessInfo();
+      }
+    }
+    function makeGuess() {
+      if (selectedNumber.length > 0) {
+        remainingGuesses--;
+        var guess = parseInt(selectedNumber);
+        if (guess === targetNumber) {
+          document.getElementById("message").innerText = "恭喜你，猜对了！";
+          disableButtons();
+        } else if (remainingGuesses === 0) {
+          document.getElementById("message").innerText =
+            "很遗憾，猜错了，正确答案是: " + targetNumber;
+          disableButtons();
+        } else {
+          var message =
+            guess < targetNumber
+              ? "太小了，请继续猜测！"
+              : "太大了，请继续猜测！";
+          document.getElementById("message").innerText = message;
+        }
+        selectedNumber = "";
+        updateGuessInfo();
+        updateRemainingGuesses();
+      }
+    }
+    function disableButtons() {
+      var numberButtons = document.getElementsByClassName("number");
+      for (var i = 0; i < numberButtons.length; i++) {
+        numberButtons[i].disabled = true;
+      }
+      document.getElementsByClassName("button")[0].disabled = true;
+    }
+  </script>
+</body>
+</html>
