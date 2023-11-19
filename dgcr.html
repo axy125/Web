@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>动感超人的朋友</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;/*将元素的 box-sizing 属性设置为 border-box 时，元素的总宽度和总高度将包括内容区域、内边距和边框，而不会额外增加。
+  元素的 width 和 height 属性会直接应用到元素的最外层边框盒的尺寸，而不会改变元素内容的尺寸。*/
+}
+body {
+  margin: 0;
+  background-color: #FFE4E1;
+}
+.header {
+  background-color: #B0E0E6;
+  padding: 20px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FAFAD2;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #FFC0CB;
+  color: black;
+}
+.column {
+  float: left;
+  width: 33.33%;/*3列*/
+  padding: 15px;
+  text-align: center;
+  
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+img{
+	width:100px;
+	height:100px;
+}
+.column img{
+	display: block;
+	margin: 0 auto 10px;
+}
+.column h2{
+	margin-top: 0;
+}
+.footer {
+  background-color: #FFEFD5;
+  padding: 5px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>动感超人</h1>
+  <p>动感光波，哔哔哔！</p>
+</div>
+<div class="topnav">
+  <a href="index.html">首页</a>
+  <a href="rwj.html">人物</a>
+  <a href="jcb.html">剧场</a>
+</div>
+<div class="row">
+  <div class="column">
+  	<img src="img/21.jpg"/> 
+    <h2>乡刚太郎</h2>
+    <p>动感超人变身前的身份，相貌英俊，是小新的朋友和偶像之一。</p>
+  </div>
+  
+  <div class="column">
+  	<img src="img/fdd.jpg"/>
+    <h2>肥嘟嘟左卫门</h2>
+    <p>野原新之助画的角色，一只憨态可掬的小猪，是正义使者的化身。大部分的时候腰间总是配带一把武士刀。如果敌人比自己的队友厉害就会抛弃队友，投靠到敌人的一边，但到最后敌人还是会把他踢回来去原本的那边，然后他的队友就会打他。帮小新处理危机后会索取拯救费。</p>
+  </div>
+  <div class="column">
+  	<img src="img/kdm.jpg"/>
+    <h2>康达姆机器人</h2>
+    <p>康达姆机器人，别称钢弹勇士。小新的偶像之一，经常与动感超人及肥嘟嘟左卫门以小新同伴的身份出现，帮助小新化解危机。绝招是康达姆铁拳。</p>
+  </div>
+</div>
+<div class="footer">
+  <p>动感超人的朋友们！</p>
+</div>
+</body>
+</html>
+
