@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/zy.css" />
+		<title>蜡笔小新乐园</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+		<style>
+			h2{
+				color: black;/*颜色*/
+				margin: 200px;/*设置所有外边距属性*/
+				text-align: center;/*文字居中*/
+			}
+			body {
+            background-image: url('img/6.jpg');
+            background-repeat: no-repeat;/*定义背景图像的重复方式*/
+            background-size: 100% 100%;/*宽度，高度*/
+            background-attachment:fixed;/*背景图像的位置是在视口内固定，或者随着包含它的区块滚动,背景相对于视口固定*/
+            transition: background-image 2s ease-in-out;
+            }
+            body.fade{
+            	background-image:url('img/2.jpg') ;
+            }
+            p{
+            	color: #FAFAD2;
+            	float: right;
+            }
+		</style>
+	</head>
+	<body>
+       <div class="nav">
+       <div class="document">
+       <ul>
+          <li><a href="grwy.html">主页</a></li>
+          <li><a href="">故事</a>
+          <ul>
+          <li><a href="gsj.html" target="_blank">故事集</a></li>
+          <li><a href="jcb.html" target="_blank">剧场版</a></li>
+          </ul>
+          </li>
+          <li><a href="#">角色</a>
+          <ul>
+          <li><a href="rwj.html" target="_blank">春日部</a></li>
+          <li><a href="ccsz.html" target="_blank">猜数字</a></li>
+          </ul>
+          </li> 
+        </ul>
+        </div>
+        </div>
+            <h2>我叫野原新之助，今年5岁</h2>
+            <footer>
+            <p id="datetime"></p>
+            </footer>
+            <script>
+             function displayDateTime() {
+             var today = new Date();//创建一个表示当前时间的date对象，并通过get.Month等获取
+             var month = today.getMonth() + 1;
+             var day = today.getDate();
+             var hour = today.getHours();
+             var minute = today.getMinutes();
+             //定义函数，定义变量获取时间等，三元运算符，如果是他们是个位数小于10，则在前面加0
+             month = month < 10 ? '0' + month : month;
+             day = day < 10 ? '0' + day : day;
+             hour = hour < 10 ? '0' + hour : hour;
+             minute = minute < 10 ? '0' + minute : minute;
+             var datetimeString = month + '/' + day + ' ' + hour + ':' + minute;//使用字符串拼接的方式将月份、日期、小时和分钟组合成一个格式为 mm/dd hh:mm 的日期时间字符串
+             document.getElementById('datetime').innerHTML = datetimeString;
+             /*通过 document.getElementById('datetime').innerHTML 获取具有 datetime id 的 HTML 元素
+                             并将日期时间字符串赋值给其 innerHTML 属性，从而显示在网页上*/
+             }
+             setInterval(displayDateTime, 1000); // 表示每隔1000毫秒（1秒）调用一次 displayDateTime 函数，以实现每秒钟更新一次当前日期和时间的效果
+            </script>
+            <script>
+            var images = ['img/6.jpg','img/2.jpg','img/3.jpg','img/9.jpg','img/12.jpg','img/5.jpg','img/13.jpg','img/yy.jpg','img/yy1.jpg','img/yy2.jpg','img/yy4.jpg','img/yy6.jpg','img/yy7.jpg'];
+            var c = 0;/*追踪当前显示的图片的索引*/
+            var background = document.querySelector('body');/*选择器获取body元素，储存在变量background中*/
+            function changeBackground() { /*声明一个函数*/
+                c++;/*自增1，选择下一张照片*/
+            if (c > images.length - 1) {/*如果超出数组长度减一（最后一张照片的索引）*/
+                c = 0;/*重置0*/
+            }
+             background.style.backgroundImage = 'url(' + images[c] + ')';
+            }
+            setInterval(changeBackground, 5000);/*每隔5000毫秒调用一次*/
+            </script>
+            <!--
+             创建一个变量 imaged表示图片数组
+              创建一个c变量是用于指示当前显示的照片
+              background变量指要更改背景图片的元素
+              changebackground用于更新背景图片元素
+              setinterval方法用于设置定时器
+              document.querySelector 使用css选择器查找html元素
+            --> 
+	</body>
+</html>

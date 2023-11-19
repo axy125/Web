@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蜡笔小新故事集</title>
+  <style>
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(img/9.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: #EEE8AA;
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background-color: #FFC0CB;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .timeline-item:nth-child(even) {
+      justify-content: flex-end;/*表示 HTML 表格中的偶数行*/
+    }
+    .timeline-item .timeline-content {
+      max-width: 500px;
+      margin: 0 20px;
+      padding: 20px;
+      background-color: #FAFAD2;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .timeline-item .timeline-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .timeline-item .timeline-content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .timeline-item .timeline-date {
+      position: absolute;
+      top: 50%;
+      left: -120px;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #999;
+      background-color: #7FFFD4;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+    .timeline-dates{
+    	position: absolute;
+    	top:60%;
+    	right:-120px;
+    	padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #999;
+      background-color: #F08080;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+    .bb{
+    	width:200px;
+    	height:200px;
+    }
+    a{
+    	text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+ <a href="index.html"><h1>故事集</h1></a>
+  <div class="timeline">
+  	 <div class="timeline-item">
+      <div class="timeline-dates">1</div>
+      <div class="timeline-content">
+        <h2>背景</h2>
+        <p>描写日本一户核心家庭日常生活的写照，而小新总是搞不清楚状况出差错或是惹人发怒；但小新有时也会展现出非同寻常的表现，和好朋友间的友谊，在家人、社区，甚至是春日部面临危机时，有勇气与智慧。</p >
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">2</div>
+      <div class="timeline-content">
+        <h2>野原家</h2>
+        <p>野原新之助出生于一个普通的日本家庭。野原家是一个富有爱心和幽默感的家庭，常常发生令人捧腹大笑的搞笑事件。</p >
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">3</div>
+      <div class="timeline-content">
+        <h2>野原家的居所</h2>
+        <p>野原家住在一个名叫日本埼玉县春日部市的小镇上。他们的房子是一栋简单而温馨的住宅，被周围的绿地和树木环绕。</p >
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">4</div>
+      <div class="timeline-content">
+        <h2>新之助的房间</h2>
+        <p>新之助的房间是他的私人领地。里面摆满了他钟爱的玩具、漫画书和游戏机。这是他的创意发源地，也是他与伙伴们一起度过快乐时光的地方。</p >
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">5</div>
+      <div class="timeline-content">
+        <h2>邻居们</h2>
+        <p>野原家的周围有许多有趣的邻居。他们包括野原家的好朋友风间、樱木、阿呆等人。他们经常一起玩耍、闹腾和分享快乐。</p >
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">6</div>
+      <div class="timeline-content">
+        <h2>故事</h2>
+        <p>日本埼玉县春日部市，一位正在“双叶幼稚园”学习的五岁小孩野原新之助（小新），在日常生活中发生的事，日子频繁琐碎却不乏温馨感动。</p >
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">7</div>
+      <div class="timeline-content">
+        <h2>最初</h2>
+        <p>起初，小新与父亲野原广志和母亲野原美冴（娘家姓：小山）组成一个3人家庭，从小房子搬入两层楼平房。随着故事发展，家中添加了一只被遗弃的小狗“野原小白（小白）”与妹妹“野原向日葵（小葵）”。车子也换了两次（前两台都是被美冴撞毁的）。</p >
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">8</div>
+      <div class="timeline-content">
+        <h2>后来</h2>
+        <p>家里一度因为被气爆炸毁而暂时搬入鸡飞狗跳庄（胯下痛公寓）一阵子，后来房屋修缮完毕，全家才搬回原住处，他们的故事也才刚刚开始...</p >
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>

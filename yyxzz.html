@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>野原一家</title>
+	 <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color: palegoldenrod;
+}
+/* 页眉标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: #B0E0E6;
+}
+.header h1 {
+  font-size: 50px;
+}
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: #E0FFFF;
+}
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #FFB6C1;
+  color: black;
+}
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+/* 框，放文字和图片 */
+.fakeimg {
+  background-color: #FFE4E1;
+  width: 100%;
+  padding: 20px;
+}
+/* 为文章添加卡片效果 */
+.card {
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(245,245,220,0.7);
+}
+/* 清除列之后的浮动 */
+.row:after { /*创建一个伪元素，作为已选中元素的最后一个子元素*/
+  content: "";
+  display: table;/*块级盒子*/
+  clear: both;/*指定一个元素是否必须移动 (清除浮动后) 到在它之前的浮动元素下面*/
+}
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #FFEFD5;
+  margin-top: 20px;
+}
+img{
+	width:233px;
+	float: right;
+}
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+a{
+	text-decoration: none;
+	color:#F08080;
+}
+.aaa{
+	width:150px;
+	height:150px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+	<img class="aaa" src="img/qq.png"/>
+	<h1>野原一家</h1>
+    <p>人生有高山，有深谷，遇到困难要互相帮助，才是家人啊！</p>
+</div>
+<div class="topnav">
+  <a href="zy.html" target="_blank">首页</a>
+  <a href="rwj.html" target="_blank">人物</a>
+  <a href="jcb.html" target="_blank">剧场</a>
+  <a href="javascript:history.back(-1)" style="float:right">返回</a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>野原广志</h2>
+      <h5>のはらひろし</h5>
+      <img src="img/gz2.jpg"/>
+      <img src="img/gz1.jpg"/>
+      <div class="fakeimg" style="height:233px;">野原新之助的爸爸，长脸形（幼时为马铃薯形），有浓重的胡须根以及灾难级的脚臭，甚至连自己都受不了，被佐藤正男取的艺名是“脚臭丸”。小新经常利用广志染有足臭的鞋袜作为武器反击。<br>在霞关的商社工作，平时几乎都是西装，夏季是短袖衬衫系领带的样子。回到家的时候，以及休息日几乎都是带颜色的衬衫和白色系的裤子。</div>
+      <p>喜欢土豆炖肉、毛豆、生鱼片（喜欢的前三名）、炸鸡、饺子、明太子、啤酒，还喜欢蓝芝士。</p>
+      <p>平时个性尚称沉稳，心地善良，但也有情绪化的一面，尤其是被噪音干扰、宿醉、工作压力大或是小新过度恶作剧的时候。身为野原家的经济支柱，重视家庭合作及意义，关心家人，对小新的管教方式较为宽松，与小新制定约定规范小新的行为，但偶尔也会因为放纵小新胡闹给自己带来麻烦。有时会自作聪明，但常常聪明反被聪明误。大多数时候看见小新行为的反应是无言或吐槽，但会同小新串通一气或是调侃美冴的长相与身材，结果遭到美冴的痛骂和挨揍。</p>
+    </div>
+    <div class="card">
+      <h2>野原美冴</h2>
+      <h5>のはら みさえ</h5>
+      <img src="img/my5.jpg" />
+       <img src="img/my4.jpg"/>
+      <div class="fakeimg" style="height:233px;">野原心之助的妈妈，眼睛很漂亮，脸上似乎有酒窝，美冴小的时候几乎和女儿小葵一模一样。粉色的双排扣造型，后来每周都会穿不同的衣服和裤子。夏天深蓝色的背心配上淡蓝色的短裤。<br>不爱运动、嗜好甜食点心，虽然多次减肥，但因为没有毅力，因此体重总是降不下来。</div>
+      <p>喜欢布丁、生巧克力、巨型泡芙、甜栗子、芋头羊羹、鲷鱼烧，也喜欢吃螃蟹。喜欢在纳豆里放芥末。</p>
+      <p>早期急性子，被小新说是，“妖怪中年海豹，妖怪小气鬼老太婆”，经常使用“愤怒铁拳”或“太阳穴转转功”揍野原新之助和野原广志，是以“暴力教育”为纲的妈妈。喜欢大拍卖，会将野原新之助做的坏事记在本子上，写上<a href="yd.html">“与妈妈的约定条款第××条”</a>，数量已超过100条，但似乎并没什么用；把家人放在第一位，尽自己的力量去保护家人。在养育孩子方面总是很积极，绝对不允许瞧不起自己的孩子的人。不会忘记对丈夫广志的关心，偶尔会在晚饭的菜上准备好他喜欢的东西。</p>
+    </div>
+     <div class="card">
+      <h2>野原向日葵</h2>
+      <h5>のはらひまわり</h5>
+      <img src="img/xrk.jpg" />
+       <img src="img/xrk1.jpg"/>
+      <div class="fakeimg" style="height:233px;">野原新之助的妹妹。刘海有三个圈儿。喜欢帅哥和亮晶晶的东西，是个十分机灵的婴儿，未满一岁。小葵还不会说话，只能发出咿咿呀呀的声音，不过偶尔可以发出一些词语的音（咿咿呀呀的发音）。</div>
+      <p>喜欢看帅哥写真集、珠宝传单、喝奶、找到发亮的东西和珠宝，很喜欢哥哥。</p>
+      <p>活泼、机灵、可爱、好动、对要好朋友感情很深（如新子），早熟、常抱有不切实际的幻想、有点霸道强势。会幻想自己和帅哥在一起的快乐情景，但常常被现实打脸。讨厌看“书”的时候被野原新之助打扰、被野原新之助欺负、无法俘获自己喜欢的帅哥的真心、发亮的东西被抢走、野原新之助吃了小葵的点心（或不给小葵吃）、钻石传单被野原新之助折纸飞机。害怕爸爸的臭袜子。
+    </div>
+     <div class="card">
+      <h2>野原小白</h2>
+      <h5>のはら シロ</h5>
+      <img src="img/xb2.jpg" />
+       <img src="img/xb1.jpg"/>
+      <div class="fakeimg" style="height:233px;">小新的狗狗，雄性、毛色为雪白、体型似棉花球，昵称小白，很聪明，有个又宽又扁的脸蛋。<br>长长的耳朵，翘起的尾巴，短短的小腿。黑鼻子，小眼睛。跟小新有几分相似。虽然是小型犬，但在室外饲养。</div>
+      <p>著名特技是“棉花糖”和挠痒痒，讨厌动物医院，害怕注射器、剪刀、药物就会和胡闹。</p>
+      <p>小新偷懒的时候小白自己会去散步，忘记被喂食的时候会在商店街表演技艺，从观众那里得到食物和钱，还会代替小新和美冴整理玩具，取下洗好的衣服。虽不会说话，但似乎能明白小新说的话。<a href="hb.html">春日部防卫队</a>的临时成员，懂感情，会流泪，会伤心，会生气。会玩捉迷藏，买菜，收拾衣服，打扫卫生。</p>
+    </div>
+    <div class="card">
+      <h2>新子</h2>
+      <h5>しんこちゃん</h5>
+      <img src="img/xz4.jpg" />
+       <img src="img/xz7.jpg"/>
+      <div class="fakeimg" style="height:233px;">新子是一个神秘角色，是个和新之助差不多年龄的女孩，自称为悠闲的孩子。发梢卷曲的茶色头发，穿着淡蓝色的衣服。活泼，可爱，古灵精怪，懂礼貌，很会和人来往，也很会哄小孩子，曾让樱田妮妮和酢乙女爱和好。</div>
+      <p>有时候说话会和小新一样颠三倒四。和新之助、向日葵一样，会不露出正面的笑容。耳朵上常戴有两个白绒球。</p>
+      <p>她出场时天上会出现漩涡形的乌云，可能是来自未来的五岁野原向日葵。了解野原家的情况，知道家里的贷款、隔壁的阿姨、小白的技艺“棉花糖”、打开卧室的壁橱就会引起雪崩等。另外，和向日葵一样喜欢宝石等发光的东西。</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+     <img src="img/jhl1.jpg"/>
+      <div class="fakeimg" style="height:100px;"></div>
+      <p>我现在很幸福！能够看到家人的笑容是最幸福的事，别小瞧我的幸福啊！一直爱着一个女人，这不是很厉害很酷的事吗！</p>
+    </div>
+    <div class="card">
+       <img src="img/jhl.jpg"/>
+      <div class="fakeimg"style="margin-top: 5px;height:280px"><p>如果要许愿的话，那么我希望家人健康和幸福吧:)</p></div>
+      
+    </div>
+    <div class="card">
+      <img src="img/xx1.jpg"/>
+      <p>虽然你可能无法理解，所谓的父母，为了孩子什么事都做得到。 </p>
+      <p>平凡是最幸福的。</p>
+    </div>
+     <div class="card">
+      <h3>如果有来生，我要当条被子，不是躺在床上就是在晒太阳！</h3>
+      <div class="fakeimg"><p>所谓真正的宝物，是可以赌上人生，忘我投入的东西。 </p></div>
+      <div class="fakeimg"><p>藏一棵树要藏在森林中，藏一个人要藏在人群中。</p></div>
+    </div>
+     <div class="card">
+      <h4>幸运这种东西是不容易找到的。</h4>
+      <div class="fakeimg" style="height:70px;">梦不会逃走，逃走的一直都是自己。<br></div> 
+    </div>
+     <div class="card">
+      <img src="img/yyyj.jpg"/>
+      <div class="fakeimg"><p>只要有形体的东西总有一天会坏掉，所以不要太在意。</p></div>
+      <div class="fakeimg"style="height: 123px;"><p>正义的反面不是邪恶，而是别的正义。</p></div>
+    </div>
+     <div class="card">
+     <img src="img/yyxzz3.jpg"/>
+      <div class="fakeimg" style="height:100px;"></div>
+      <p>如果你很害怕的话，就牵着我的手吧，让我带你去安全的地方。带你去属于我们自己的地方。</p>
+    </div>
+    <div class="card">
+      <h4>幸福这种东西，都要在失去的时候才会发现的。</h4>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2>努力就是一种才能，乌龟努力的话也可以赢过兔子啊。</h2>
+</div>
+</body>
+</html>

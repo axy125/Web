@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>蜡笔小新剧场版</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <audio 
+    autoplay="autoplay" 
+    loop="loop" 
+    preload="auto"
+    src="img/lbxx.mp3">
+    </audio>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container { /*大网格*/
+            display: grid;
+            grid-template-rows: auto 1fr;/*网格线的名称和网格轨道的尺寸大小*/
+            grid-template-columns: 1fr;/*网格线的名称和网格轨道的尺寸大小*/
+            min-height: 100vh;/*实现一屏可以用100vh来实现*/
+            border: 1px solid #ccc;/*边框的颜色*/
+        }
+        .nav {
+            background-color: #EEE8AA;
+            color: #fff;
+            padding: 20px;/*设置所有内边距属性 上下左右*/
+            text-align: center;
+            height: 40px;
+            font-size:20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 30px;/*元素设置所有四个（上下左右）方向的外边距属性*/
+        }
+        .intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;/*2等份*/
+            grid-gap: 5px;/*设置网格行与列之间的间隙*/
+            padding: 10px;
+            border-top: 1px solid #ccc;/*顶部边框*/
+            background-color: #E0FFFF;
+        }
+        .intro-item {
+            border: 1px solid #ccc;
+            display: flex;/*弹性布局*/
+            grid-template-columns:auto 1fr ;
+            padding: 10px;
+            height: 290px;
+            align-items: center;
+        }
+        .intro-item img {
+            max-width: 100%;
+            align-content: center;
+            margin-right: 20px;
+            max-width: 160px;
+            max-height: 250px;
+            border-radius: 10%;/*边框*/
+        }
+        p{
+        	font-size: 15px;
+        }
+        a{
+        	text-decoration: none;
+        	color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+	<!--
+         大块分为两块，第一块代表导航栏，第二块是其余部分，为小块intro，又划分两列
+    -->
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">首页</a>
+            <a href="rwj.html">人物</a>
+        </div>
+        <div class="intro">
+            <div class="intro-item">
+                <img src="img/jcb.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%8A%A8%E6%84%9F%E8%B6%85%E4%BA%BA%E5%A4%A7%E6%88%98%E6%B3%B3%E8%A3%85%E9%AD%94%E7%8E%8B/14820328?fromModule=lemma_inlink">蜡笔小新：动感超人大战泳装魔王</a></h2>
+                    <p>动感超人的动感石头被高衩魔王抢走了，少了那个动感超人和咪咪就不能回到原来的世界。于是他们决定指派小新一家人成为动感战士，不知情的小新一家就这么带着动感超人卡片前往另一个世界，这时在魔王和他的党羽肆虐下，另一个世界的人纷纷变成开高叉泳装人，小新听了咪咪的双胞胎姐姐莉莉和博士的说明后，决定协助动感超人克服危机，遂和小白骑着博士特制的三轮车去找魔王，双方展开一场大战，他和动感超人能打败魔王挽救地球的和平吗...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb1.jpg" alt="剧场版2海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%B8%83%E9%87%8C%E5%B8%83%E9%87%8C%E7%8E%8B%E5%9B%BD%E7%9A%84%E5%AE%9D%E8%97%8F/14820356?fromModule=lemma_inlink">蜡笔小新：不理不理王国的宝藏</a></h2>
+                    <p>美冴和小新上街买菜“意外”抽中了头奖，获得免费招待全家前往遥远的布理布理王国，没想到一家人高兴地上了飞机后，却出现神秘组织白蛇帮派出的人妖意图绑架小新，小新和爸妈急忙跳伞降落在丛林中，在猴子帮助才逃过一劫，并在火车上认识了皇室亲卫官美女露露，这才得知长相酷似小新的王子也遭白蛇帮绑架。这时白蛇帮的人追来抢走了小新，原来白蛇帮的老大阿那康达和手下哈布，为了夺取不理不理王国传说中的宝藏，必须靠王子和小新才能打开宫殿之门，而那个宝藏竟是瓶中拥有无穷法力的大魔神，小新能阻止他们的阴谋吗...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb3.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E4%BA%91%E9%BB%91%E6%96%8B%E7%9A%84%E9%87%8E%E5%BF%83/14820385?fromModule=lemma_inlink">蜡笔小新：云黑斋的野心</a></h2>
+                    <p>未来人歇鲁跑到日本的战国时代改变了历史，时空巡逻队铃可发现了异状，正预备前往，没想到在时光隧道中遭受到攻击，不小心掉进二十世纪的小新家。铃可借由小白向野原一家求救，于是野原一家踏上时光之旅回到战国时代。遇见了吹雪丸的他们，与他一同前往云黑城，打倒化身为云黑斋改变历史的坏蛋歇鲁，没想到的是歇鲁居然躲过攻击，还逃到了二十世纪。原以为可以回到家乡的野原一家，回到二十世纪后，发现时代已经被改变了，又是歇鲁搞的鬼...</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb4.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E4%BA%91%E9%BB%91%E6%96%8B%E7%9A%84%E9%87%8E%E5%BF%83/14820385?fromModule=lemma_inlink">蜡笔小新：奇异乐园大冒险</a></h2>
+                    <p>双叶幼稚园带着所有的小朋友到新开幕的奇异乐园玩，只是小新居然后来没跟着大家走，独自走进了尚未对外开张的马戏团，在这里遇到了童话故事中的木偶多佩玛，邪恶的同性恋双魔，还有他的手下。坏人们为了争取超级无敌厉害的扑克牌，展开了一场现实与魔幻世界的追逐，最后连小新的爸爸妈妈都被同性恋双魔的手下抓走了，为了救回爸爸妈妈，小新只有勇敢的再回到奇异乐园...</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb5.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E9%BB%91%E6%9A%97%E7%8F%A0%E7%8F%A0%E5%A4%A7%E8%BF%BD%E5%87%BB/14820389?fromModule=lemma_inlink">蜡笔小新：黑暗珠珠大追击</a></h2>
+                    <p>小新在河边无意间捡到一颗弹珠，看它很闪亮于是就捡回家里。没想到却被小葵吞进肚子里。这下糟了，原来这颗弹珠是珠由良族与珠黄泉族在争夺的魔人贾克的珠珠，珠黄泉族的首领玉王想要利用贾克的魔力征服世界。就这样，小新一家人卷入两族人的争夺战中，小葵被玉王绑架走了，大家为了保护小葵，费尽心力…最后平安的救出小葵，小新却在无意间，将两颗珠珠放进封印贾克的人俑里，魔人贾克被释放出来了...</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb7.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E7%94%B5%E5%87%BB%EF%BC%81%E7%8C%AA%E4%B9%8B%E8%B9%84%E5%A4%A7%E4%BD%9C%E6%88%98/9425426?fromModule=lemma_inlink">蜡笔小新：电击！猪之蹄大作战</a></h2>
+                    <p>秘密的为了维护世界和平，阻止邪恶的黑道组织-猪蹄组征服世界的诡计，派特工美色（魅力）潜入邪恶组织，偷取执行计划的核心元件。在逃亡过程中，美色（魅力）无意间上了小新一行人搭乘的游船，使得小新也被卷入正邪的对抗战中，还被带往邪恶组织。原来邪恶组织要进行的计划是，让大袋博士开发出来的新型电子生命体肥嘟嘟左卫门入侵全世界的电脑，进而征服世界。没想到这个新型的电子生命体的原创者居然是小新...</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb8.png" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E7%88%86%E5%8F%91%EF%BC%81%E6%B8%A9%E6%B3%89%E6%BF%80%E7%83%88%E5%A4%A7%E5%86%B3%E6%88%98/14820395?fromModule=lemma_inlink">蜡笔小新：爆发！温泉激烈大决战</a></h2>
+                    <p>污垢达人正计划将整个地球变成一个大温泉，政府的秘密组织温泉G组为了阻止他们的野心，到处寻找黄金之魂温泉，希望借温泉的神力打倒坏蛋。没想到黄金之魂温泉居然就在小新家的地底下，就这样他们一家人卷入了守护温泉的正邪之战...</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb8.png" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E6%A3%AE%E6%9E%97%E9%87%8C%E7%9A%84%E6%9A%B4%E9%A3%8E%E9%9B%A8/9165902?fromModule=lemma_inlink">蜡笔小新：风起云涌的丛林冒险</a></h2>
+                    <p>小新跟妈妈还有风间、妮妮、正男、阿呆一起报名动感超人周年纪念南海之旅，就在动感超人电影的船上首映会上，突然出现了一群粗暴的猴子将大人们都掳走了。春日部防卫队为了救出大人们而出动，大家乘坐上水上摩托车，来到了森林里，他们能成功吗？</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb9.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%EF%BC%81%E7%8C%9B%E7%83%88%EF%BC%81%E5%A4%A7%E4%BA%BA%E5%B8%9D%E5%9B%BD%E7%9A%84%E5%8F%8D%E5%87%BB/14821132?fromModule=lemma_inlink">蜡笔小新：暴风大人帝国反击战</a></h2>
+                    <p>春日部突然有人举办了“20世纪博览会”，大人们都沉浸在旧时的电视节目和电影、日常生活里，不过小新等小孩子们感到趣味索然。当大人们从博览会回来后，每个人都开始变得懒散，不仅不再做家事、也不再到公司里去上班，每天只知沉迷在旧时的电视节目、或是玩耍里，并且开始对小新等小孩子们视若无睹。有一天突然出现几辆卡车，把所有大人载走，只留下春日部里的所有小孩。原来这一切都是一个名为“yesterday once more”的组织的所为,为了使爸爸妈妈回来，小新和风间、妮妮、正男、阿呆决定一起去找……路上敌人不断的追赶（包括小新的爸爸妈妈和幼稚园的老师们），他们能够成功吗？</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb10.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%EF%BC%81%E5%A3%AE%E7%83%88%EF%BC%81%E6%88%98%E5%9B%BD%E5%A4%A7%E5%90%88%E6%88%98/14821139?fromModule=lemma_inlink">蜡笔小新：战国大合战</a></h2>
+                    <p>某一晚，野原一家同时梦见了古装剧里才会出现的“古代美女”，虽然全家人都觉得很不可思议，却也没有深入追究。当天下午小新从幼稚园回来时，看到小白正在庭院里拼命挖洞，而当小新也跟着开始挖掘后，竟然挖出了一个箱子，里面放有小新亲笔写的书函，除了写有天正2年的字眼外，还画有肥嘟嘟左卫门的图案。小新由于摸不著头绪而闭上眼睛思考，却在睁开眼时发现自己已经身处在一个战国时代，并阴错阳差救了武士，更因此得以见到了梦中的那位美女“阿廉公主”...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb11.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%EF%BC%81%E5%85%89%E8%8D%A3%E7%83%A7%E8%82%89%E4%B9%8B%E8%B7%AF/14821141?fromModule=lemma_inlink">蜡笔小新：呼风唤雨！光荣烧肉之路</a></h2>
+                    <p>一天早晨，小新一家人正为了晚上的烧肉大餐而兴奋莫名，却被一名突然闯入的男子打乱了一切，自此原本过着安逸生活的一家人竟成了通缉要犯，还被神秘组织“甜蜜男孩”追讨一项没有人知道是什么的“那个东西”！为了能如原订计划吃到超豪华烧肉大餐，一家人把时间限定在晚餐前，发誓要在这之前找出真相、洗刷冤屈。面对神秘组织设下的重重陷阱与猛烈攻击，野原家所有成员循着蛛丝马迹，使出浑身解数，展出十八般武艺，对抗声势浩大的神秘组织兵团，最后，终于抵达神秘组织的所在地—热海，并和总部老大有了正面交锋的机会。当老大解开谜题，说出“那个东西”为何时，小新一家人又面临了另一场考验...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb12.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%EF%BC%81%E5%A4%95%E9%98%B3%E4%B8%8B%E7%9A%84%E6%98%A5%E6%97%A5%E9%83%A8%E7%94%B7%E5%AD%A9/14821142?fromModule=lemma_inlink">蜡笔小新：夕阳下的春日部男孩</a></h2>
+                    <p>当小新一群人在玩抓鬼游戏时，无意中闯入一家已经废弃的电影院里，里面还播放着电影，于是留下，看起免费的电影，但小新上厕所回来后，风间他们居然不见了。小新很气他们不等自己，只是回去得知他们都没还回家。野原一家因为担心，决定到电影院去看看，结果都被“电影”给吸进去了，来到了一个像是西部拓荒时代的城镇。最初与风间相遇，而风间却记忆全失，还好得到住在城镇的少女椿的帮助，野原一家才安定下来。广志则去做木工，美冴去酒馆里卖唱，小新在住的同时见到妮妮、正男、阿呆，但正男和妮妮已成夫妇，他们不想回到春日部，小新和阿呆每天则想着回去的办法和回忆过去的事情...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb13.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A3%E5%88%86%E9%92%9F%E7%99%BE%E5%8F%98%E5%A4%A7%E8%BF%9B%E5%87%BB/14821145?fromModule=lemma_inlink">蜡笔小新：3分钟百变大进击</a></h2>
+                    <p>突然出现在野原一家面前的时间和空间调查员,说时空发生了扭曲，不应存在的怪兽从怪兽的世界进入了现实世界而且怪兽将会在3分钟后出现！如果3分钟后未来的怪兽不能被打倒,怪兽就会出现实！为了拯救世界灭亡，野原一家担任了地球防卫这个重大使命。但是，连续不断强大的怪兽从后边开始出现，渐渐现实世界变得危险…</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb14.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E5%94%A4%E4%BC%A0%E8%AF%B4%EF%BC%81%E8%B7%B3%E8%88%9E%E5%90%A7%EF%BC%81%E6%9C%8B%E5%8F%8B%EF%BC%81/14821172?fromModule=lemma_inlink">蜡笔小新：Amigo！森巴入侵计划</a></h2>
+                    <p>双叶幼稚园的园游会快到了，往年都会在园游会里跳春日部舞，但这一年松坂梅却突然提议要跳森巴，不过马上受到吉永绿和上尾真澄的大力反对，最终也只好不了了之。奇怪的是，第二天在幼稚园里，吉永却不同前一晚的态度，大力向园长建议园游会上应该跳热情的森巴。另一方面，阿呆告诉大家有个传言，春日部里出现了”克隆人”。而小新妈妈也听到了这个传言，但是大家也认为这只是谣传而已，结果没想到野原一家竟然在新开幕的超市里，遇到了妈妈美冴的克隆人，而后，广志和小新的克隆人也纷纷现身了。究竟这背后有什么阴谋？又是谁为了什么在制造克隆人……？</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jc.jpg" alt="剧场版1海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E9%A3%8E%E8%B5%B7%E4%BA%91%E6%B6%8C%EF%BC%81%E5%94%B1%E6%AD%8C%E7%9A%84%E5%85%89%E5%B1%81%E8%82%A1%E7%82%B8%E5%BC%B9/17854064?fromModule=lemma_inlink">蜡笔小新：小白的屁屁炸弹</a></h2>
+                    <p>小新一家去冲绳旅行，本来是平凡的一天，然而小新的宠物小白却突然沾上了一枚威力强大的炸弹！这个炸弹是被奇异的外星生物“屁股星人”遗留下来的，其力量足以毁掉整个地球。全球65亿人的注意力都集中在了一只小狗身上！面对来自宇宙监视中心和美女恐怖集团白黑两道对小白的争夺，小新挺身而出誓死保护小白！</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb16.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%EF%BC%81%E9%87%91%E7%9F%9B%E4%B9%8B%E5%8B%87%E8%80%85/14821188?fromModule=lemma_inlink">蜡笔小新：风起云涌的金矛勇者</a></h2>
+                    <p>小新和妈妈一起逛百货公司，他缠着妈妈买了假面英雄最新出品的玩具宝剑。回家之后，宝剑竟然变成了普通的竹棒。回家路上，小新遇到了和小白长得一模一样的狗狗，不同在于它是黑色的。小新给它取名为小黑，让小黑留在了家里。正当野原家过着平静的日子时，通向黑暗世界库莱顿的大门被打开了，统治地球的邪恶计划正在秘密推进。一天，一位名叫“普莉林”的大姐来找小新，说他是被选中的勇者，必须对抗来自黑暗之门的邪恶力量。从那天开始，爸爸失去晋升机会，妈妈在大减价争斗中落败，黑暗力量侵袭。在少女马塔塔米帮助下尚未觉醒的小新打败了一个又一个敌人。但更强大的敌人出现了，小新能拯救世界么？！</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb17.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%90%E5%96%8A%EF%BC%81%E6%98%A5%E6%97%A5%E9%83%A8%E9%87%8E%E7%94%9F%E7%8E%8B%E5%9B%BD/14821195?fromModule=lemma_inlink">蜡笔小新：呐喊！春日部野生王国</a></h2>
+                    <p>春日部正进行着善待地球的环保活动，小新也和大家一起开展捡垃圾活动。期间，小新偶然捡到了一瓶看似好味的饮料，于是他拿回家放在冰箱里。可是，他刚想喝的时候却发现爸爸和妈妈早把饮料喝完。然后，喝完饮料的爸爸和妈妈竟然都变成了动物！爸爸是鸡，妈妈是豹。小新的父母变成动物后就慢慢地不认识小新和小葵了。小新的朋友们以及春日部里好多人也因意外而变成了动物。在意识到必须采取行动后，小新与朋友们一起踏上了寻找并解救被抓走的父母及其他人的冒险之旅。在到达目的地后他们遇上了不少困难，小新与妈妈的母子亲情受到严峻考验！小新到底会怎么做...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb18.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E8%B6%85%E6%97%B6%E7%A9%BA%EF%BC%81%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%E4%B9%8B%E6%88%91%E7%9A%84%E6%96%B0%E5%A8%98/14821200?fromModule=lemma_inlink">蜡笔小新：我的超时空新娘</a></h2>
+                    <p>某日，小新未来的新娘明子从20XX年的未来都市“Neo Tokio”来到小新的面前。多美子告诉小新，未来的他被“Neo Tokio”的支配者也就是多美子的父亲金有增藏给绑架了，需要只有5岁的小新帮忙解救。于是小新决定和多美子乘坐时光机去未来都市。到达未来的他们立刻开始寻找已经成年的小新，可是却遭到了金有增藏派出的刺客袭击。小新能否成功救出未来的自己呢？他能顺利和多美子喜结良缘吗？“Neo Tokio”能重夺光明美好未来吗？小新的自我拯救行动就要开始了！</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb19.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%EF%BC%81%E9%BB%84%E9%87%91%E9%97%B4%E8%B0%8D%E5%A4%A7%E4%BD%9C%E6%88%98/14821206?fromModule=lemma_inlink">蜡笔小新：黄金间谍大作战</a></h2>
+                    <p>某天，小新闲逛的时候捡到一个动感超人的面具，戴上面具后，小新发现自己竟然能和动感超人通话。他被任命为代表正义的动感间谍，专门与邪恶势力作战，并且见到了他的搭档——7岁女孩苏诺萌·柠檬（爱河里花子 配音）。在柠檬的带领下，小新开始作为动感间谍的艰苦训练。在这一过程中，面向凶恶的怪大叔不断偷袭小新，而在这一系列事件背后，似乎又隐藏着两个神秘的国家——无声屁共和国与不放屁王国。看似善良的柠檬也变得正邪难辨。不久，小新更和柠檬闯入了困难重重的不放屁王国...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb20.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%91%BC%E9%A3%8E%E5%94%A4%E9%9B%A8%EF%BC%81%E6%88%91%E4%B8%8E%E5%AE%87%E5%AE%99%E5%85%AC%E4%B8%BB/14821565?fromModule=lemma_inlink">蜡笔小新：我和我的宇宙公主</a></h2>
+                    <p>因为一块布丁，野原新之助和妹妹野原向日葵激烈争吵，身为哥哥他自然受到爸爸野原广志和妈妈野原美冴的训斥。小新恼羞成怒，扬言“不要当哥哥！不要妹妹了！”就在此刻，一胖一瘦两个绿衣人出现，声称愿意将小葵收养，以向日葵公主的身份展开新的生活。一道刺眼强光过后，签订了协议的野原一家被吸入UFO，开始了吉凶未卜的宇宙旅行。从向日葵星国王口中得知，当前这颗星球和地球正面临前所未有的危机，一旦二者间的平衡受到破坏，两颗星球都将迎来毁灭的厄运。而向日葵，正是防止危机的关键……</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb21.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E8%B6%85%E7%BA%A7%E7%BE%8E%E5%91%B3%EF%BC%81B%E7%BA%A7%E7%BE%8E%E9%A3%9F%E5%A4%A7%E9%80%83%E4%BA%A1%EF%BC%81%EF%BC%81/14821567?fromModule=lemma_inlink">蜡笔小新：美味！B级美食大逃亡！</a></h2>
+                    <p>阳光明媚的一天，盛大的B级美食嘉年华在春日部市召开，野原新之助看到新闻后兴奋非常，于是和樱田妮妮、风间彻、阿呆、佐藤正男等好朋友们商定，偷偷前往嘉年华大饱口福。与此同时，B级美食嘉年华举行的消息也传到所谓的A级美食机构。该机构最高负责人满美食大人（中村悠一 配音）对B级食物充满鄙夷，他决定彻底摧毁这些下等吃食。未久，A级美食的飞船飞临嘉年华，对底层料理手艺人进行无情驱逐。为了挽救B级美食，炒面阿健决定启用传承已达五十代的秘制酱汁。阿健的相好红子走投无路，将酱汁罐子交给春日部防卫队的各位。小新和朋友们无意间承担起包围B级美食的重任……</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb22.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%A4%A7%E5%AF%B9%E5%86%B3%EF%BC%81%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%88%B8%E7%88%B8%E7%9A%84%E5%8F%8D%E5%87%BB/14821579?fromModule=lemma_inlink">蜡笔小新：对决！机器人爸爸的反击</a></h2>
+                    <p>某天野原广志在和小新玩耍是不小心扭伤脊椎，于是去按摩店进行按摩治疗，但是回来时却意外发现变成了一个机器人！！爸爸突然变成机器人，让妈妈美冴非常疑惑，倒是小新觉得好处不少！因为小新可以用遥控器操纵机器人爸爸，不仅能做出美味料理，还将家里打扫的闪闪发亮！可是所有的一切原来是「爸爸奋起同盟」的阴谋，要帮在家里地位越来越卑微的爸爸们，恢复尊严！被无情对待的爸爸们因此引爆「爸爸革命」，让野原一家和春日部几乎瓦解！危急存亡之时，机器人爸爸与小新挺身而出！野原一家和机器人野原广志的未来，将面临什麼样的挑战？此时此刻，全国所有家庭的爱与未来，遭遇前所未有的考验！</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb23.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E6%88%91%E7%9A%84%E6%90%AC%E5%AE%B6%E7%89%A9%E8%AF%AD%EF%BD%9E%E4%BB%99%E4%BA%BA%E6%8E%8C%E5%A4%A7%E8%A2%AD%E5%87%BB%EF%BD%9E/18802198?fromModule=lemma_inlink">蜡笔小新：搬家物语！仙人掌大袭击</a></h2>
+                    <p>讲述了野原一家与春日部朋友们告别，这一遭难道是风间与小新的永别！？<br>没想到这次徙居是墨西哥，野原一家会在墨西哥发生什么趣闻呢！？<br>等待着野原一家的冒险究竟是什么！？<br>世间没有这么美，究竟还会有怎样的呢！？<br>身裹西部风格的野原一家，又将给大家带来一个爆笑喜剧，敬请期待哟~</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb24.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E7%88%86%E7%9D%A1%EF%BC%81%E6%A2%A6%E5%A2%83%E4%B8%96%E7%95%8C%E5%A4%A7%E7%AA%81%E5%87%BB/19132362?fromModule=lemma_inlink&fromtitle=%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E7%88%86%E7%9D%A1%EF%BC%81%E5%9C%A8%E6%A2%A6%E7%9A%84%E4%B8%96%E7%95%8C%E5%A4%A7%E7%AA%81%E5%87%BB&fromid=18839724">蜡笔小新：爆睡！梦世界大作战</a></h2>
+                    <p>春日部掉入能实现所有梦想的缤纷梦世界，风间当上政治家、妮妮变成偶像明星、正男则是漫画家，而阿呆却是石头?!没想到这些快乐的好梦，可能是被神秘人士控制，使大家突然失去了作梦的自由，这一切似乎和有着一头紫色头发的转学生“小崎”有关…小新、风间、妮妮、正男和阿呆，为了这个谜样的小女生展开大冒险，这组拥有欢笑力量的“春日部防卫队”能解开梦境的秘密吗？恢复彩色人生吗？</p >
+                </div>
+            </div>
+             <div class="intro-item">
+                <img src="img/jcb25.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%AE%87%E5%AE%99%E4%BA%BAPi%E5%8A%9B%E6%9D%A5%E8%A2%AD%EF%BC%81%EF%BC%81/22044553?fromModule=lemma_inlink&fromtitle=%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%AE%87%E5%AE%99%E4%BA%BA%E6%9D%A5%E8%A2%AD&fromid=20149353">蜡笔小新：宇宙人Pi力来袭！！</a></h2>
+                    <p>旅程的尽头，是友情？还是亲子间的羁绊？<br>某一天夜晚，突然有外星人来访野原家。其名曰Pi力。Pi力用迷之光束让小新的爸爸妈妈重返25年光阴，变成孩子的模样。<br>为了变回大人，野原宝宝一家将Pi力藏进小新的屁股里，开始了横跨日本的旅程...但其实，Pi力的父亲正企划着一个“巨大的阴谋”！！<br>野原一家最终能否挽救地球危机！？<br>他们是否能够回到原本的正常生活！？<br>宇宙无敌大笨蛋小新与迷之外星人Pi力的全日本大捣蛋计划即将开始！！</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb26.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E7%88%86%E7%9B%9B%EF%BC%81%E5%8A%9F%E5%A4%AB%E7%94%B7%E5%AD%A9%EF%BD%9E%E6%8B%89%E9%9D%A2%E5%A4%A7%E4%B9%B1%EF%BD%9E/22236119?fromModule=lemma_inlink">蜡笔小新：爆盛！功夫男孩～拉面大乱～</a></h2>
+                    <p>故事发生在春日部的中华街上的“哎呀城”，正男邀请春日部防卫队的大家学习传说中的功夫－软Q软Q拳，和功夫少女“小兰”一起练功。此时兴起神秘面食“黑熊猫拉面”的流行。那是只要吃过一次就会上瘾，且让人变得凶暴的恐怖拉面！面对这突如袭来的拉面危机，春日部防卫队能够恢复街上的和平吗？</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb28.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E6%96%B0%E5%A9%9A%E6%97%85%E8%A1%8C%E9%A3%93%E9%A3%8E%E4%B9%8B%E9%81%97%E5%A4%B1%E7%9A%84%E9%87%8E%E5%8E%9F%E5%B9%BF%E5%BF%97/24205605?fromModule=lemma_inlink">蜡笔小新：新婚旅行飓风之遗失的野原广志</a></h2>
+                    <p>这一次的舞台是澳大利亚，野原家族，第一次的新婚旅行，对于从来没有过新婚旅行的野原美冴&野原广志二人而言，某天。野原美冴找到了一个可以全家超低价参加新婚旅行的旅游活动。于是，野原美冴决定动员一家参加这场活动，但是，在旅途的前方等待他们的并非火热的甜蜜爱情蜜月，而是猛烈又危险的大冒险？？</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb27.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E6%BF%80%E6%88%98%EF%BC%81%E6%B6%82%E9%B8%A6%E7%8E%8B%E5%9B%BD%E5%92%8C%E7%BA%A6%E5%9B%9B%E4%BD%8D%E5%8B%87%E5%A3%AB/24149692?fromModule=lemma_inlink">蜡笔小新：激战！涂鸦王国和约四位勇士</a></h2>
+                    <p>随着时代的变迁，近年地球上的涂鸦以肉眼可见的速度在减少，涂鸦王国也面临了能源不足的巨大危机。涂鸦王国的军队将王国能源不足作为借口展开了对地球的进攻...竟然！选中了新之助他们生活的春日部！可以将画出的物品赋予生命，拥有王国秘宝“奇迹蜡笔”的救世主竟然……是“有~点随意的5岁儿童”野原新之助！</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb29.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E8%B0%9C%E5%9B%A2%EF%BC%81%E8%8A%B1%E4%B9%8B%E5%A4%A9%E4%B8%8B%E6%98%A5%E6%97%A5%E9%83%A8%E5%AD%A6%E9%99%A2/60077260?fromModule=lemma_inlink">蜡笔小新：谜团！花之天下春日部学院</a></h2>
+                    <p>小新、风间等人组成的春日部防卫队受风间之邀，前往一所高档的私立学校体验生活，但风间却在体验入学后不久因奇妙的原因变成了一个“笨蛋”。春日部防卫队将和这所学校的学生会会长一起，克服一道道难题...</p >
+                </div>
+            </div>
+            <div class="intro-item">
+                <img src="img/jcb30.jpg" alt="剧场版3海报">
+                <div>
+                    <h2><a href="https://baike.baidu.com/item/%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0%EF%BC%9A%E5%B9%BD%E7%81%B5%E5%BF%8D%E8%80%85%E7%8F%8D%E9%A3%8E%E4%BC%A0/59450466?fromModule=lemma_inlink">蜡笔小新：幽灵忍者珍风传</a></h2>
+                    <p>在某个雨天，野原广志和野原美冴生了一个婴儿。过了5年后的某一天，一位陌生女性来到野原一家，向野原夫妇坦白说自己是野原新之助的亲生父母。不知所措的两人让她留宿，但是那天晚上，野原一家遭到了神秘忍者军团的袭击...</p >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

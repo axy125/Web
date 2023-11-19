@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>春日部防卫队</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+        <style>
+        body {
+           overflow: hidden; /*隐藏整个页面的滚动条 */
+           background-image: url(img/2.jpg);
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           background-attachment:fixed;
+        }
+        a{
+        	text-decoration: none;
+        }
+        .container {
+            position: relative;/*指定一个元素在文档中的定位方式，该关键字下，元素先放置在未添加定位时的位置，再在不改变页面布局的前提下调整元素位置（因此会在此元素未添加定位时所在位置留下空白）*/
+            width: 100%;
+            height: 100%;
+        }
+        .person {
+            position: absolute;/*元素会被移出正常文档流，并不为元素预留空间，通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置。绝对定位的元素可以设置外边距（margins），且不会与其他边距合并*/
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;/*浏览器之间，如何分配顺着弹性容器主轴*/
+            cursor: pointer;/*光标的类型，在鼠标指针悬停在元素上时显示相应样式，这个是手*/
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+            overflow: hidden;
+        }
+        .person .person-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color:white;
+            transform: translate(-50%, -50%);
+            width: 220px;
+            height: 220px;
+            padding: 5px;
+            border-radius: 50%;/*图像的样式*/
+            display: none;
+            opacity: 0;/*元素的不透明度，完全透明*/
+            text-align: center;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .person:hover .person-info {
+            display: block;/*元素显示为块级元素*/
+            opacity: 1;
+        }
+        .person:hover span {
+            display: none;
+        }
+        .name{
+        	font-size: 25px;
+        }
+        .flicker{
+		   color:#E9967A;
+		   font-size:64px; 
+		   font-weight:bolder; 
+		   animation: flicker 2s infinite;   
+		   text-align: center; 
+		   font-style: italic;
+		}
+		/*webkit表示这个动画效果只适用于webkit内核的浏览器*/
+		@keyframes flicker{                    
+		    0%{
+		        opacity: 1;
+		    }
+		    50%{
+		        opacity: 0.5;
+		    }
+		    100%{
+		        opacity: 1;
+		    }
+		}
+    </style>
+</head>
+<body>
+	<a href="zy.html"><h1 class="flicker">春日部防卫队</h1></a>
+    <div class="person" style="top: 150px; left: 550px;background-image: url(img/fj1.jpg);">
+        <div class="person-info">
+            <p>双叶幼稚园向日葵班学童，野原新之助的幼儿园同学。礼貌，有责任心，自大骄傲，，但有时也有出乎意料的温柔的的一面。幼儿园外，风间彻会参加各种各样的补习班，在补习的过程中经常会被新之助搅乱，导致自尊心受挫，但很快就会与新之助和好。</p >
+        </div>
+        <span class="name">风间彻</span>
+    </div>
+    <div class="person" style="top: 40px; left: 10px;background-image: url(img/ad1.jpg);">
+        <div class="person-info">
+            <p>总是发呆，拖着鼻涕，说话的时候很敏锐。特长是用鼻涕制作螺旋桨和东京铁塔的事。最高兴的时候，鼻涕会快速旋转。爱好是收集石头。深藏不露，有诗意，有丰富的知识，杂学知识丰富。很善于做家事，对偏门的传说，传闻都非常清楚。</p >
+        </div>
+        <span class="name">阿呆</span>
+    </div>
+    <div class="person" style="top:300px; left: 200px;background-image: url(img/zn4.jpg);">
+        <div class="person-info">
+            <p>感觉很弱，很容易被欺负的孩子。脸的形状很像“饭团”。有时非常认真，比如整理东西。迷恋酢乙女爱，做事经常落后。温柔坦率的性格，但是有些懦弱，也非常爱哭，做事容易极度害怕。被别人夸奖恭维会得意忘形，但也会表现出夸张的自卑感。</p >
+        </div>
+        <span class="name">佐藤正男</span>
+    </div>
+    
+    <div class="person" style="top: 100px; left: 900px;background-image: url(img/mm3.jpg)">
+        <div class="person-info">
+            <p>双叶幼稚园向日葵班学童，野原新之助的幼儿园同学。个性强势，勇敢、胆子大，任性。喜欢当别人的传闻的女儿。喜欢玩超现实的过家家，但被邀请的朋友稍稍有些为难。跟妈妈一样，不如意的话会在厕所或没有人的角落里拿兔子拳打脚踢来出气...很可怕。</p>
+        </div>
+        <span class="name">樱田妮妮</span>
+    </div>
+</body>
+</html>

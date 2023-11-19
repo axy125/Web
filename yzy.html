@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>双叶幼稚园</title>
+   <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <audio 
+    autoplay="autoplay" 
+    loop="loop" 
+    preload="auto"
+    src="img/yzy.mp3">
+    </audio>
+  <style>
+  	body{
+  		background-color: #FFE4E1;
+  	}
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);/*表示网格轨道的重复部分*/
+      grid-template-rows: repeat(5, 1fr);
+      grid-gap: 10px;
+    }
+    .header {
+      background-color: #E0FFFF;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed;
+      color: darksalmon;
+      text-align: center;
+      padding: 10px;
+      grid-column: 1 / span 5;/*指定网格项目的大小和位置*/
+    }
+    .main-content {
+      background-color: palegoldenrod;
+      padding: 18px;
+      grid-column: 2 / span 3;
+      grid-row: 2 / span 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;/*弹性容器主轴的内容对齐方式，表示项目沿主轴起点对齐*/
+    }
+    .grid-item {
+      background-color: #FFC0CB;
+      padding: 34px;
+      text-align: center;
+    }
+    a{
+    	text-decoration: none;
+    	color: brown;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>双叶幼稚园</h1>
+ </div>
+  <div class="grid-container">
+    <div class="grid-item" onclick="changeContent(1)">园长先生</div>
+    <div class="grid-item" onclick="changeContent(2)">园长夫人</div>
+    <div class="grid-item" onclick="changeContent(3)">吉永绿</div>
+    <div class="grid-item" onclick="changeContent(4)">松阪梅</div>
+    <div class="grid-item" onclick="changeContent(5)">上尾真澄</div>
+    <!-- 中间大格 -->
+    <div class="main-content" id="mainContent">
+      <!-- 默认内容 -->
+      <h2>双叶幼稚园</h2>
+      <p>园长为高仓文太，向日葵班老师为吉永绿，玫瑰班老师为松坂梅，樱花班老师为上尾真澄，是野原新之助及其好友风间彻、樱田妮妮、佐藤正男、阿呆所就读的幼稚园。作品中经常以该幼稚园为背景，野原新之助及他的老师、好友们发生了许多有趣的校园故事。</p>
+    </div>
+    <!-- 底部五个小格 -->
+    <div class="grid-item" onclick="changeContent(6)">热缲椎造</div>
+    <div class="grid-item" onclick="changeContent(7)">野原新之助</div>
+    <div class="grid-item" onclick="changeContent(8)">风间彻</div>
+    <div class="grid-item" onclick="changeContent(9)">樱田妮妮</div>
+    <div class="grid-item" onclick="changeContent(10)">佐藤正男</div>
+    <!-- 右侧五个小格 -->
+    <div class="grid-item" onclick="changeContent(11)">阿呆</div>
+    <div class="grid-item" onclick="changeContent(12)">酢乙女爱</div>
+    <div class="grid-item" onclick="changeContent(13)">河村豹</div>
+    <div class="grid-item" onclick="changeContent(14)">樱花班</div>
+    <div class="grid-item" onclick="changeContent(15)">向日葵班</div>
+    <div class="grid-item" onclick="changeContent(16)">玫瑰班</div>
+  </div>
+  <script>
+    // JavaScript函数，根据点击的小格更改中间大格的内容
+    function changeContent(gridNumber) { //定义一个函数，changecontent从gridNumber中获取
+      var mainContent = document.getElementById("mainContent");/*当前文档的对象，通过指定的id获取对应的html元素*/
+      // 根据点击的小格的编号，更改中间大格的内容
+      switch (gridNumber) {
+        case 1:
+          mainContent.innerHTML = "<h2>高仓文太（たかくら ぶんた）</h2><p>双叶幼稚园的园长。因为相貌可怕常被小新调侃为黑道老大，有时甚至吓坏陌生的小朋友。经常被小新叫做“老大”、“组长”，实则心地善良，常常收养在外流浪的小动物，决心投入幼教事业是在东京念大学时，有次迷路时问路被路人当作坏人企图袭击他们，因而在数次被人惧怕后在某个地方意志消沉地坐着发呆，但当时有位小朋友看出他内心的善良，送他糖果，受到感动的他因而在毕业后投入幼教事业。因为相貌恐怖，一方面保证了儿童的安全，但因此导致去小新家拜访时，被临近的居民误会，出现防暴警察出动的闹剧。园长先生写得一手好书法，在写书法的单元中曾秀出他的好笔功。</p>";
+          break;
+        case 2:
+          mainContent.innerHTML = "<h2>高仓志麻（たかくらしま）</h2><p>双叶幼稚园园长高仓文太之妻。担任幼稚园副园长，性格较园长严肃。</p>";
+          break;
+        case 3:
+          mainContent.innerHTML = "<h2>吉永绿（よしながみどり）</h2><p>双叶幼稚园向日葵班的老师。心地善良，是一个非常负责任并且有耐心的好老师。隔壁玫瑰班老师松坂梅总是向她抬杠叫板，偏要和她拼个高下，但其实很关心对方。后与相识多年的男友石坂纯一结婚。春日部防卫队经常擅自在她家举行会议并称之为“春日部防卫队的秘密基地”。丈夫叫石坂纯一，女儿叫石坂桃。</p>";
+          break;
+        case 4:
+          mainContent.innerHTML = "<h2>松阪梅（まつざか うめ）</h2><p>双叶幼稚园玫瑰班的教师。喜欢名贵服饰和帅哥，相亲数次都以失败告终，爱慕德朗医生。出身于乡下地区，但因爱慕虚荣且好面子的性格作祟，经常对外诓称自己出身六本木。逢月底常因为购买名牌商品造成经济拮据。于接骨院邂逅接骨医师行田德郎，并发展为情侣关系。最讨厌小新叫他“小梅”、“阿梅”。常常参加联谊但是几乎都失败。</p>";
+          break;
+        case 5:
+          mainContent.innerHTML = "<h2>上尾真澄（あげお ますみ）</h2><p>双叶幼稚园樱花班导师。上尾十分擅长使用电脑，坐在电脑前时也会像摘下眼镜一样性格发生变化，变成爱自言自语的自恋形态。<br>常常带着一副大眼镜，而被小新认为很帅而很崇拜她。喜欢吃甜甜圈，在戴着眼镜的时候十分胆小还患有严重的恐高症。<br>和黑矶先生的关系甚为暧昧，是少数看过黑矶先生把墨镜拿下后样子的人。</p>";
+          break;
+        case 6:
+          mainContent.innerHTML = "<h2>热缲椎造（あつくる しいぞう）</h2><p>个性乐观，精力充沛，喜爱运动，爱帮助人，最后使大家喜欢上自己。精力充沛，一开始因为太过积极的个性使得学生和他有些距离，在吉永老师产假结束后离开了幼稚园，但偶尔会回到幼稚园看望大家。</p>";
+          break;
+        case 7:
+          mainContent.innerHTML = "<h2>野原新之助（のはら しんのすけ）</h2><p>双叶幼稚园向日葵小班的学生。活泼、乐观、可爱、运动神经好，挑食，好色、顽皮、早熟、迟钝。喜欢动感超人，康达姆机器人、肥嘟嘟左卫门，喜欢吃巧克力饼干，还有最喜欢露屁屁外星人。</p>";
+          break;
+        case 8:
+          mainContent.innerHTML = "<h2>风间彻（かざま とおる）</h2><p>双叶幼稚园向日葵小班的学生。最喜欢的卡通人物是魔法少女可爱P。卷翘的前刘海，以及蓝色上衣与橙色短裤。一表人才又博闻强识，言行举止都显得很有品味。<br>经常受小新的骚扰，但傲娇的他其实只是爱面子、自尊心强，并不想刻意表达自己对小新的感情，十分珍惜和春日部防卫队成员的友情.</p>";
+          break;
+        case 9:
+          mainContent.innerHTML = "<h2>樱田妮妮（さくらだ ねね）</h2><p>双叶幼稚园向日葵小班的学生。喜欢玩“超真实扮家家酒”，酢乙女爱的天敌。生气时经常拿幸福兔来出气。在超真实扮家家酒中，通常饰演“美丽的”妻子，也常被防卫队其他成员暗中吐嘈。<br>性格随心所欲、大大咧咧，且非常坦率，脾气暴躁、霸道强势、腹黑。</p>";
+          break;
+        case 10:
+          mainContent.innerHTML = "<h2>佐藤正男（さとう まさお）</h2><p>双叶幼稚园向日葵小班的学生。御饭团，性格胆小却很热心，最喜欢小爱，梦想是成为一名漫画家。遇到困难或较恐怖的东西，哭的第一个就是他，但不小心反击时就会变成另种个性，喜欢看动感超人。</p>";
+          break;
+        case 11:
+          mainContent.innerHTML = "<h2>阿呆（ボーちゃん）</h2><p>双叶幼稚园向日葵小班的学生。鼻涕星人，阿呆很厉害，正因如此受到同龄人的膜拜。阿呆是蜡笔小新的同学中的聪明人，大家不能被他呆呆的外表所迷惑，他沉默寡言，但在重要时刻总能做出与自己年龄不符的行为，从而转变战局，十分的靠谱。阿呆会用鼻涕表演许多精彩的节目。<br>阿呆为人老实，不善言谈，从不发表自己的意见，运动神经迟钝，总是陪小新玩无聊的游戏。十分喜欢收集奇形怪状的石头。</p>";
+          break;
+        case 12:
+          mainContent.innerHTML = "<h2>酢乙女爱（すおとめ あい）</h2><p>小爱，喜欢野原新之助，双叶幼稚园学童，家境十分富裕。经常上很多课外活动。平常由保镖黑矶负责接送和保护，</p>";
+          break;
+        case 13:
+          mainContent.innerHTML = "<h2>河村豹</a></h2><p>双叶幼稚园玫瑰班的学生。身体素质好，运动神经强，各类运动高手，喜欢争勇斗狠，但常常莫名其妙的败给小新。他有两个跟班，一伙人算的上是幼稚园儿童头领。</p>";
+          break;
+        case 14:
+          mainContent.innerHTML = "<h2>双叶幼稚园</h2><p>自幼体质虚弱，且父母早亡，只能在屋内生活，对屋外的世界了解甚少，靠村里人帮助活着。拥有血继限界，被村人发现其能力后遭遇排斥。不久黑锄雷牙发现并收留了兰丸，兰丸和雷牙相依为命。雷牙充当兰丸的手脚，兰丸充当雷牙战斗时的双眼，兰丸最初因为自己无法被容纳的经历而成为雷牙的工具，后来遇到希望保护酢酱草金山的鸣人、天天、宁次和李洛克，在四人的影响下逐渐感化。鸣人通过了解兰丸的经历，在他的身上看到了白的影子。后看见已被击败并失去生命的雷牙，于是用自己的力量复活雷牙而一度昏死过去。醒悟后原本想和雷牙同归于尽，最后被漩涡鸣人等人救下。雷牙死后被山椒婆婆收留，和芥子一起做咖喱，重新过上了普通的生活。</p>";
+          break;
+        case 15:
+          mainContent.innerHTML = "<h2>向日葵班</h2><p>班级老师：吉永绿。<br>班级成员：野原新之助、阿呆、风间彻、酢乙女爱、樱田妮妮、时川翔、佐藤正男、二子玉川双胞胎。</p>";
+          break;
+        default:
+          mainContent.innerHTML = "<h2>玫瑰班</h2><p>班级老师：松阪梅。<br>班级成员：河村豹、仁、辉信、若林、阿干、山村、秋风舞、圆张夕子、小千代大海、中村与高原、雨贺得男、官轻羽流、根双祭、唾木、加门丰作、南岛康介、巢久井金太、互美田月人、根井丸、顷㭴文五郎、形冰杉夫、津见来太郎、穴雪丈、阿久濑留美、电能寺义我男、卡林·古德曼·飞鸟、卡拉·班德里希·海苔平、城建、耳吹翔、阿地代阿多太。</p>";
+          break;
+      }
+    }
+  </script>
+</body>
+</html>

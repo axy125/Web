@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>角色介绍</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+    <style>
+      body {
+        background-image:url(img/2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment:fixed;
+      }
+      .character {
+       border-radius: 50%;
+       width: 105px;
+       height: 105px;
+       border: 2px solid black;
+       text-align: center;
+       line-height: 100px;
+       font-size: 16px;
+       color: black;
+       position: absolute; 
+       animation-name: float;/*动画名字*/
+       animation-duration: 3s;/*设置动画完成一个动画周期所需的时间*/
+       animation-iteration-count: infinite;/*设置动画序列在停止前应播放的次数，无限循环*/
+       animation-direction: alternate;/*动画在每个循环中正反交替播放，第一次迭代是正向播放。确定循环是奇数还是偶数的计数从 1开始*/
+       animation-timing-function: ease-in-out;/*每一动画周期中执行的节奏，规定以慢速开始和结束的过渡效果*/
+      }
+       @keyframes float {
+       from { transform: translate(0, 0); }
+       to { transform: translate(0, 5px); }
+      }
+     .lbxx{
+     	float: right;
+     	margin-top: -130px;
+     }
+     .a{
+       margin-top: 2px;
+		   text-decoration: none;
+		   font-size:70px;
+		   font-family:"微软雅黑";
+		   -webkit-animation: shine 2.4s infinite;
+		}
+		@-webkit-keyframes shine{
+		    0%,100%{ color:#B0E0E6;text-shadow:0 0 10px #F08080,0 0 10px #FFE4E1; }
+		    50%{ text-shadow:0 0 10px #FAFAD2,0 0 40px #FAFAD2; }
+		}
+    </style>
+  </head>
+  <body>
+  	<h1 class="a">人物集</h1>
+    <a href="lbxx.html"> <img class="lbxx"src="img/lbxx2.png"/></a>
+    <div class="character" style="top: 30%; left: 55%;background-image: url(img/my.jpg);"onclick="window.location.href='yyxzz.html'">野原美伢</div>
+    <div class="character" style="top: 10%; left: 55%;background-image: url(img/dgcr.jpg);"onclick="window.location.href='rw4.html'">动感超人</div>
+    <div class="character" style="top: 50%; left: 50%;background-image: url(img/19.jpg);"onclick="window.location.href='lbxx.html'">野原新之助</div>
+    <div class="character" style="top: 35%; left: 35%;background-image:url(img/gz.jpg);"onclick="window.location.href='yyxzz.html'">野原广志</div>
+    <div class="character" style="top: 15%; left: 37%;background-image:url(img/xz3.jpg);"onclick="window.location.href='yyxzz.html'">新子</div>
+    <div class="character" style="top: 46%; left: 60%;background-image: url(img/xk.jpg);"onclick="window.location.href='yyxzz.html'">野原向日葵</div>
+    <div class="character" style="top: 20%; left: 15%;background-image: url(img/h2.jpg);"onclick="window.location.href='yyy.html'">野原银之介</div>
+    <div class="character" style="top: 30%; left: 45%;background-image: url(img/xb.jpg);"onclick="window.location.href='yyxzz.html'">野原小白</div>
+    <div class="character" style="top: 65%; left: 60%;background-image: url(img/fdd.jpg);"onclick="window.location.href='dgcr.html'">肥嘟嘟左卫门</div>
+    <div class="character" style="top: 52%; left: 40%;background-image: url(img/21.jpg);"onclick="window.location.href='dgcr.html'">乡刚太郎</div>
+    <div class="character" style="top: 52%; left: 30%;background-image: url(img/fy.png);"onclick="window.location.href='yyy.html'">片冈房冴</div>
+    <div class="character" style="top: 70%; left: 45%;background-image: url(img/kdm.jpg);"onclick="window.location.href='dgcr.html'">康达姆机器人</div>
+    <div class="character" style="top: 78%; left: 35%;background-image: url(img/nnz.jpg);"onclick="window.location.href='rw2.html'">大原娜娜子</div>
+    <div class="character" style="top: 92%; left: 45%;background-image: url(img/ad.jpg);"onclick="window.location.href='hb.html'">阿呆</div>
+    <div class="character" style="top: 65%; left: 90%;background-image: url(img/gm.png)"onclick="window.location.href='yzy.html'">高仓志麻</div>
+    <div class="character" style="top: 60%; left: 80%;background-image: url(img/znmm.jpg)"onclick="window.location.href='yzy.html'">正南妈妈</div>
+    <div class="character" style="top: 82%; left: 55%;background-image: url(img/nn1.jpg);"onclick="window.location.href='hb.html'">樱田妮妮</div>
+    <div class="character" style="top: 81%; left: 65%;background-image: url(img/f.jpg);"onclick="window.location.href='hb.html'">风间彻</div>
+    <div class="character" style="top: 96%; left:74%;background-image: url(img/zn.jpg);"onclick="window.location.href='hb.html'">佐藤正男</div>
+    <div class="character" style="top: 115%; left:1%;background-image: url(img/g.png);"onclick="window.location.href='qyhxd.html'">鸡眼阿银</div>
+    <div class="character" style="top: 115%; left:12%;background-image: url(img/dzj.png);"onclick="window.location.href='qyhxd.html'">短指甲龙子</div>
+    <div class="character" style="top: 165%; left:23%;background-image: url(img/bblz.png);"onclick="window.location.href='yyy.html'">北本玲子</div>
+    <div class="character" style="top: 172%; left: 8%;background-image: url(img/lblt.jpg);"onclick="window.location.href='yyy.html'">洛贝鲁特</div>
+    <div class="character" style="top: 115%; left: 22%;background-image: url(img/hz.jpg);"onclick="window.location.href='rw2.html'">本田惠子</div>
+    <div class="character" style="top: 114%; left: 43%;background-image: url(img/bt.jpg);"onclick="window.location.href='rw2.html'">本田悟史</div>
+    <div class="character" style="top: 118%; left: 33%;background-image: url(img/wh.png);"onclick="window.location.href='rw2.html'">最上川文惠</div>
+    <div class="character" style="top: 135%; left: 40%;background-image: url(img/btqq.jpg);"onclick="window.location.href='rw2.html'">本田齐</div>
+    <div class="character" style="top: 190%; left: 13%;background-image: url(img/xg.jpg);"onclick="window.location.href='yyy.html'">小刚</div>
+    <div class="character" style="top: 100%; left:30%;background-image: url(img/ymmz.jpg);"onclick="window.location.href='rw4.html'">樱咪咪子</div>
+    <div class="character" style="top: 135%; left: 6%;background-image: url(img/ja.png);"onclick="window.location.href='qyhxd.html'">青春痘玛丽</div>
+    <div class="character" style="top: 135%; left: 20%;background-image: url(img/lb.png);"onclick="window.location.href='yyy.html'">书店老板</div>
+    <div class="character" style="top: 145%; left: 30%;background-image: url(img/dy.png);"onclick="window.location.href='yyy.html'">中村</div>
+    <div class="character" style="top: 155%; left: 13%;background-image: url(img/mq.jpg);"onclick="window.location.href='yyy.html'">鸠谷席林</div>
+    <div class="character" style="top: 155%; left: 2%;background-image: url(img/m.jpg);"onclick="window.location.href='yyy.html'">鸠谷蜜琪</div>
+    <div class="character" style="top: 80%; left: 80%;background-image: url(img/ytmm.jpg);"onclick="window.location.href='rw2.html'">樱田萌子</div>
+    <div class="character" style="top: 85%; left: 90%;background-image: url(img/ytm.jpg);"onclick="window.location.href='rw2.html'">樱田苗木</div>
+    <div class="character" style="top: 105%;left: 65%;background-image: url(img/hcb.jpg);"onclick="window.location.href='yzy.html'">河村豹</div>
+    <div class="character" style="top: 106%;left: 55%;background-image: url(img/a.jpg);"onclick="window.location.href='yzy.html'">酢乙女爱</div> 
+    <div class="character" style="top: 70%; left: 25%;background-image: url(img/fz.jpg);"onclick="window.location.href='yyy.html'">小山芳治</div>
+    <div class="character" style="top: 90%; left: 20%;background-image: url(img/gy.jpg);"onclick="window.location.href='yyy.html'">小山高冴</div>
+    <div class="character" style="top: 85%; left: 1%;background-image: url(img/zy.jpg);"onclick="window.location.href='yyy.html'">小山真冴</div>
+    <div class="character" style="top: 90%; left: 10%;background-image: url(img/my3.jpg);"onclick="window.location.href='yyy.html'">小山梦冴</div>
+    <div class="character" style="top: 15%; left: 25%;background-image: url(img/h1.png);"onclick="window.location.href='yyy.html'">野原鹤</div>
+    <div class="character" style="top: 45%; left: 1%;background-image: url(img/xz.png);"onclick="window.location.href='yyy.html'">野原狭志</div>
+    <div class="character" style="top: 40%; left: 20%;background-image: url(img/yc.jpg);"onclick="window.location.href='yyy.html'">野原育菜</div>
+    <div class="character" style="top: 50%; left: 10%;background-image: url(img/yys.jpg);"onclick="window.location.href='yyy.html'">野原树</div>
+    <div class="character" style="top: 68%; left: 15%;background-image: url(img/cz.jpg);"onclick="window.location.href='yyy.html'">野原菜摘</div>
+    <div class="character" style="top: 65%; left: 1%;background-image: url(img/ys.jpg);"onclick="window.location.href='yyy.html'">野原芽生</div>
+    <div class="character" style="top: 25%; left: 2%;background-image: url(img/yq.jpg);"onclick="window.location.href='yyy.html'">樱千露</div>
+    <div class="character" style="top: 42%; left: 90%;background-image: url(img/yz.jpg);"onclick="window.location.href='yzy.html'">高仓文太</div>
+    <div class="character" style="top: 40%; left: 80%;background-image: url(img/jy.jpg);"onclick="window.location.href='yzy.html'">吉永绿</div>
+    <div class="character" style="top: 50%; left: 72%;background-image: url(img/sbcy.png);"onclick="window.location.href='rw2.html'">石坂纯一</div>
+    <div class="character" style="top: 30%; left: 72%;background-image: url(img/sbls1.jpg);"onclick="window.location.href='yzy.html'">松坂梅</div>
+    <div class="character" style="top: 18%; left: 65%;background-image: url(img/ys1.jpg);"onclick="window.location.href='rw2.html'">行田德郎</div>
+    <div class="character" style="top: 22%; left: 90%;background-image: url(img/sw.jpg);"onclick="window.location.href='yzy.html'">上尾真澄</div>
+    <div class="character" style="top: 20%; left: 80%;background-image: url(img/hj.jpg);"onclick="window.location.href='rw2.html'">黑矶</div>
+    <div class="character" style="top: 125%; left: 90%;background-image: url(img/fjj.jpg);"onclick="window.location.href='rw2.html'">风间久彦</div>
+    <div class="character" style="top: 122%; left: 80%;background-image: url(img/rzy.jpg);"onclick="window.location.href='yzy.html'">热缲椎造</div>
+    <div class="character" style="top: 165%; left: 80%;background-image: url(img/jld.png);"onclick="window.location.href='rw3.html'">卖间久里代</div>
+    <div class="character" style="top: 176%; left: 89%;background-image: url(img/scx.png);"onclick="window.location.href='rw3.html'">时川翔</div>
+    <div class="character" style="top: 192%; left: 75%;background-image: url(img/sbt22.png);"onclick="window.location.href='rw3.html'">二子玉川达也</div>
+    <div class="character" style="top: 195%; left: 85%;background-image: url(img/sbt11.png);"onclick="window.location.href='rw3.html'">二子玉川和也</div>
+    <div class="character" style="top: 130%; left: 70%;background-image: url(img/ck.jpg);"onclick="window.location.href='rw2.html'">川口本子</div>
+    <div class="character" style="top: 105%; left: 85%;background-image: url(img/fj.jpg);"onclick="window.location.href='rw2.html'">风间峰子</div>
+    <div class="character" style="top: 130%; left: 50%;background-image: url(img/sl.png);"onclick="window.location.href='jfgtz.html'">四郎</div>
+    <div class="character" style="top: 135%; left: 60%;background-image: url(img/qdhz.jpg);"onclick="window.location.href='jfgtz.html'">屈底厚子</div>
+    <div class="character" style="top: 149%; left: 66%;background-image: url(img/qdhm.jpg);"onclick="window.location.href='jfgtz.html'">屈底厚美</div>
+    <div class="character" style="top: 158%; left: 40%;background-image: url(img/ly.jpg);"onclick="window.location.href='jfgtz.html'">役津栗优</div>
+    <div class="character" style="top: 150%; left: 50%;background-image: url(img/kzw.jpg);"onclick="window.location.href='jfgtz.html'">苦汁屋京助</div>
+    <div class="character" style="top: 165%; left: 60%;background-image: url(img/17.jpg);"onclick="window.location.href='rw2.html'">丽莎阿司匹林</div>
+    <div class="character" style="top: 175%; left: 70%;background-image: url(img/xwyn.jpg);"onclick="window.location.href='jfgtz.html'">玄武岩男</div>
+    <div class="character" style="top: 185%; left: 60%;background-image: url(img/stnr.jpg);"onclick="window.location.href='rw3.html'">神田鸟忍</div>
+    <div class="character" style="top: 178%; left: 38%;background-image: url(img/16.jpg);"onclick="window.location.href='rdqrz.html'">胆固醇麻醉</div>
+    <div class="character" style="top: 170%; left: 50%;background-image: url(img/18.jpg);"onclick="window.location.href='jfgtz.html'">污田急痣</div>
+    <div class="character" style="top: 195%; left: 45%;background-image: url(img/dwzd.jpg);"onclick="window.location.href='jfgtz.html'">大屋主代</div>
+    <div class="character" style="top: 190%; left: 28%;background-image: url(img/lt.png);"onclick="window.location.href='jfgtz.html'">连图</div>
+    <div class="character" style="top: 148%; left: 76%;background-image: url(img/yjyr.jpg);"onclick="window.location.href='rw2.html'">仪井臼人</div>
+    <div class="character" style="top: 148%; left: 88%;background-image: url(img/jjr.png);"onclick="window.location.href='rw2.html'">酒井忍</div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>崎玉红蝎子队</title>
+     <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(img/12.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed;
+    }
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    h1 {
+      margin: 0;
+      color: #FFA07A;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+    .person {
+      position: relative;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 2px solid black;
+      cursor: pointer;
+      transition: transform 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   .person:hover {
+      transform: scale(1.2);
+    }
+    .card {
+      position: absolute;
+      top: 410px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      padding: 20px;
+      background-color: darksalmon;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      pointer-events: none;/*让元素实体虚化*/
+      transition: opacity 0.3s;
+      font-size: 20px;
+    }
+    .person:hover + .card, .card:hover {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>崎玉红蝎子队</h1>
+  </header>
+  <div class="container">
+    <div class="person"style="background-image: url(img/dzjlz.jpg);">
+    	<p>深爪龙子</p>
+    </div>
+    <div class="card">
+      <h2>深爪龙子</h2>
+      <p>老大，“搞笑师父/艺人”。脾气有些暴躁，傲娇，自称不良少女，队名和动作是自己设计的，被吐槽后会用小拳拳打她们，心里很在意她们，喜欢可爱的东西。</p>
+    </div>
+    <div class="person"style="background-image: url(img/jyay.jpg);">
+    	 <h2>鸡眼阿银</h2>
+    </div>
+    <div class="card">
+      <h2>鸡眼阿银</h2>
+      <p>琦玉红蝎队成员之一，有着细长双眼及染成橘色的头发，每次出现时都戴着印有X字样的口罩的少女。</p >
+    </div>
+    <div class="person"style="background-image: url(img/qcdml.jpg);">
+    	 <h2>青春痘玛莉</h2>
+    </div>
+    <div class="card">
+      <h2>青春痘玛莉</h2>
+      <p>琦玉红蝎队成员之一，青春痘玛莉，身型肥胖，满面雀斑的少女，重视友情。</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>蜡笔小新</title>
+   <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #EEE8AA;
+    }
+    h1 {
+      color: #333333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .box{
+		   margin:20px auto; 
+		   text-align: center;
+		}
+		.shine{
+		   font-size:50px; 
+		   font-weight:bolder; 
+		   color:#FFFFFF; 
+		   cursor:pointer; 
+		   -webkit-animation:light 1.5s ease-in-out infinite alternate;/*设置动画*/
+		}
+		@-webkit-keyframes light{
+		   from{
+		       text-shadow:0 0 10px #fff,
+		                      0 0 20px #fff,
+		                      0 0 30px #fff,
+		                      0 0 40px #0000FF,
+		                      0 0 70px #0000FF,
+		                      0 0 80px #0000FF,
+		                      0 0 100px #0000FF,
+		                      0 0 150px #0000FF;
+		   }
+		   to{
+		       text-shadow:0 0 5px #fff,
+		                      0 0 10px #fff,
+		                      0 0 15px #fff,
+		                      0 0 20px #0000FF,
+		                      0 0 35px #0000FF,
+		                      0 0 40px #0000FF,
+		                      0 0 50px #0000FF,
+		                      0 0 75px #0000FF;
+		   }
+		}
+    .character-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .character-card {
+      width: 300px;
+      background-color: #B0E0E6;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+      margin: 10px;
+      padding: 20px;
+      }
+    .character-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .character-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .character-description {
+      color: #666666;
+    }
+    a{
+    	text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+	<div class="box">	
+  <a href="zy.html"><h1 class ="shine">其他人物</h1></a>
+ </div>
+  <div class="character-container">
+  	 <div class="character-card">
+      <img class="character-image" src="img/ckk.jpg" alt="Character 1">
+      <h2 class="character-name">川口本子<br>（かわぐち）</h2>
+      <p class="character-description">川口是野原广志的部下。24岁。未婚单身。个性憨厚，口才稍差，但行事能力佳，对广志很了解，私下关系也很好，经常会借给广志喜欢看的桃色写真杂志。川口和小新一样不喜欢吃青椒 。川口曾经喜欢松坂梅，但因为误会不欢而散。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/ym.jpg" alt="Character 1">
+      <h2 class="character-name">草加由美<br>（くさか ユミ）</h2>
+      <p class="character-description">双叶商事的新人，有些天然呆。野原广志的下属及恋爱幻想对象，常出现在广志的梦中并向其告白。她有一个宠物猴子康萨雷斯，但因病往生。进入公司后看到和康萨雷斯长得一样的野原广志便忍不住写了封信，结果这封信被误以为是情书而在野原家一度引起了大风暴。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/scx1.png" alt="Character 1">
+      <h2 class="character-name">时川 翔<br>(ときかわ しょう)</h2>
+      <p class="character-description">向日葵班转学生，因为父亲的工作关系常需要搬家，在缺乏陪伴的情况养成常和人打架的习惯。后来在和小新竞争决斗的过程，逐渐成为朋友。最终再度因为搬家而离开双叶幼儿园。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/sbt.png" alt="Character 1">
+      <h2 class="character-name">二子玉川达也<br>(つぎこたまがわ たつや)</h2>
+      <p class="character-description">双胞胎兄弟，头发长有单根呆毛的是哥哥达也，长有两根呆毛的是弟弟和也。兄弟俩彼此水火不容，但只要相离超过一米就会嚎啕大哭。</p>
+    </div>
+   
+     <div class="character-card">
+      <img class="character-image" src="img/sbt1.png" alt="Character 1">
+      <h2 class="character-name">二子玉川和也<br>(つぎこたまがわ かずや)</h2>
+      <p class="character-description">双胞胎兄弟，头发长有单根呆毛的是哥哥达也，长有两根呆毛的是弟弟和也。兄弟俩彼此水火不容，但只要相离超过一米就会嚎啕大哭。</p>
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/jr.jpg" alt="Character 1">
+      <h2 class="character-name">仪井臼人<br>（うすいよしと）</h2>
+      <p class="character-description">漫画家，知名度不小，作品有《少年忍者吹雪丸》。但因作品无法如期完成而常以“因病无法完成”之名行拖稿之实。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/lt2.png" alt="Character 1">
+      <h2 class="character-name">连图（れんず）<br>（リサアスピリン）</h2>
+      <p class="character-description">梭鱼照相摄影棚的老板，自己是老板，接到的工作也是零零散散的，平日父亲也会在店里帮忙，收留小山梦冴在这里打工。热爱摄像，爱好世界和平，坦率照片最棒了！做好该做的事。</p>
+    </div>
+    
+     <div class="character-card">
+      <img class="character-image" src="img/mjjld.jpg" alt="Character 1">
+      <h2 class="character-name">卖间久里代<br>（うりまくりよ）</h2>
+      <p class="character-description">27岁，推销幼儿教育图书磁带和小型录音机，经常被人认为男人，被北本太太发现报警。每次推销有小新在场都会被整的一塌糊涂。“地狱女推销员”。在推销时，若客户不购买她推销的商品，就极力推销至客户答应购买为止。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/dgcmz.jpg" alt="Character 1">
+      <h2 class="character-name">胆固醇麻醉<br>（すてろいど ますお）</h2>
+      <p class="character-description">毒犯。被污田急痣和苦汁屋京助监视，因想退出贩毒组织被追杀，最后被捕入狱（自首）。留中长发和些许胡子并戴上墨镜，曾和小新和污田在公园玩游戏，当被逮捕时，小新说他绝不是坏人的话，感动到弃暗投明，供出组织的一切情报。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/lsaxpl.jpg" alt="Character 1">
+      <h2 class="character-name">丽莎阿司匹林<br>（リサアスピリン）</h2>
+      <p class="character-description">职业模特儿，胆固醇麻醉的女友。胆固醇被污田和苦汁屋逮捕之后，向胆固醇保证一定会等他回来。居住在鸡飞狗跳庄对面的公寓。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/jjr1.png" alt="Character 1">
+      <h2 class="character-name">酒井忍<br>（さかい しのぶ）</h2>
+      <p class="character-description">大学生，为生活而奔波打零工，曾当过快餐店店员、加油站店员...每次都因对小新发飙而遭老板开除。住在小新家附近，小新有时也会擅自跑到她家作客。</p>
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/stnr.png" alt="Character 1">
+      <h2 class="character-name">神田鸟忍<br>（神田鳥忍）</h2>
+      <p class="character-description">大原娜娜子和野原新之助的好朋友，特技是柔道，曾经把小新的爸爸摔倒过，喜欢帅哥，为人比较夸张，特别爱吃。也有去坐过山车而晕过去的经历。</p>
+    </div>
+  </div>
+  </body>
+</html>

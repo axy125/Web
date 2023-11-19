@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>蜡笔小新</title>
+   <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color:papayawhip;
+    }
+    h1 {
+      color: #333333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .flicker{
+		   color:#9966FF; /*设置文字颜色*/
+		   font-size:50px; /*设置字体大小*/
+		   font-weight:bolder; /*设置字体粗细*/
+		   -webkit-animation: flicker 2s infinite;    
+		}
+		@-webkit-keyframes flicker{                    
+		    0%{
+		        opacity: 1;
+		    }
+		    50%{
+		        opacity: 0.5;
+		    }
+		    100%{
+		        opacity: 1;
+		    }
+		}
+    .character-container {/*大块*/
+      display: flex;/*弹性布局，子元素使用弹性布局排列
+      弹性布局是一种在容器内部自动调整子元素大小和位置的布局方式，使得子元素能够根据可用空间进行伸缩、对齐和分布。
+      弹性容器具有主轴和交叉轴，通过设置不同的属性和值，可以控制子元素在主轴和交叉轴上的排列方式、对齐方式等。*/
+      flex-wrap: wrap;/*子元素是否换行*/
+      justify-content: space-around;/*平均分配子元素，留有空白间距*/
+    }
+    .character-card {
+      width: 300px;
+      background-color: powderblue;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+      margin: 10px;
+      padding: 20px;
+      animation-name: float;
+      animation-duration: 3s;/*在3秒内完成一个循环*/
+      animation-iteration-count: infinite;/*设置动画循环次数为无限循环*/
+      animation-direction: alternate;/*设置动画的播放方向为交替方向，正向和反向*/
+      animation-timing-function: ease-in-out;
+      }
+       @keyframes float {
+       from { transform: translate(0, 0); }
+       to { transform: translate(0, 5px); }
+      }
+    .character-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;/*用于指定元素在容器内的适应方式，替换元素将缩放以填充容器，保存其宽高比
+      照片根据容器大小自适应，填充容器*/
+      border-radius: 5px;
+      margin-bottom: 10px;
+      animation-name: float;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+    .character-name {
+      font-size: 20px;
+      font-weight: bold;/*加粗*/
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .character-description {
+      color: #666666;
+    }
+    a{
+    	text-decoration: none;
+    	color:#F08080;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="flicker">蜡笔小新</h1>
+
+  <div class="character-container">
+    <div class="character-card">
+      <img class="character-image" src="img/dl.jpg" alt="Character 1">
+      <h2 class="character-name">行田徳郎<br>(ぎょうだとくろう)</h2>
+      <p class="character-description">圣塔芭芭拉接骨院医生，26岁。因<a href="yzy.html">松坂梅</a>受伤就医而结识，后成为其男友。兴趣是研究骨头，后来为了挖掘化石而远赴南美洲。后来因被恐怖分子炸死。</p >
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/sbcy1.png" alt="Character 2">
+      <h2 class="character-name">石坂纯一<br>(いしざかじゅんいち)</h2>
+      <p class="character-description"><a href="yzy.html">吉永绿</a>的丈夫，女儿叫石坂桃，24岁。有点胆小，为人随和。和吉永很相爱，经历许多最终走向婚姻，生了个可爱宝宝。</p >
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/hj1.png" alt="Character 1">
+      <h2 class="character-name">黑矶<br>（くろいそ）</h2>
+      <p class="character-description">为<a href="yzy.html">酢乙女爱</a>的贴身保镖兼司机。与上尾老师关系暧昧。时常弄坏小爱家中的物品，并遭小爱暗中纪录，进而作为威胁，让她能在应该学习或上才艺课程的时段，临时翘课去做其他事情。</p>
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/nnz1.jpg" alt="Character 1">
+      <h2 class="character-name">大原娜娜子<br>(おおはら ななこ)</h2>
+      <p class="character-description"><a href="lbxx.html">小新</a>最喜欢的人，是唯一一个发自内心想要温柔守护的人。因为帮小新弄掉了进入眼中的沙粒后两人相识。后与<a href="yyxzz.html">野原家</a>来往，与小新一家关系很好。美丽善良，温柔又不失个性，理解并认同小新的屁股见光舞。</p >
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/fjfz.jpg" alt="Character 1">
+      <h2 class="character-name">风间峰子<br>（かざまみねこ）</h2>
+      <p class="character-description"><a href="hb.html">风间彻</a>的妈妈，风间久彦的妻子，是一名美女硕士,家境富裕，经常购买名牌衣服。个性看似温柔，但对小彻的考试成绩有严格的要求。</p >
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/fjbb.png" alt="Character 1">
+      <h2 class="character-name">风间久彦<br>（くんのパパ）</h2>
+      <p class="character-description"><a href="hb.html">风间彻</a>的父亲，是一名博士，在世界各地工作。风间和小新等曾为他布置欢迎仪式，欢迎他的回来。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/ytmz1.jpg" alt="Character 1">
+      <h2 class="character-name">樱田萌子（さくらだもえこ）</h2>
+      <p class="character-description"><a href="hb.html">妮妮</a>的母亲，全职家庭主妇。既是温柔妈妈，擅长做美味的食物，又是暴力狂，喜欢暴打兔子玩偶。有些虚荣心，爱和别的主妇攀比。</p >
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/ytmm.png" alt="Character 1">
+      <h2 class="character-name">樱田苗木<br>（さくらだなえき）</h2>
+      <p class="character-description"><a href="hb.html">樱田妮妮</a>的爸爸，在漫画里是在家附近出了名的型男，在动画里则是一名戴眼镜、斯斯文文、一表人才、性格随和的中年男性。</p >
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/hz1.jpg" alt="Character 1">
+      <h2 class="character-name">本田惠子<br>（ほんだ ケイこ）</h2>
+      <p class="character-description"><a href="yyxzz.html">野原美冴</a>中学及高中时代的同学兼朋友。29岁才和插画师本田悟史结婚，育有一子本田仁。因为丈夫比自己小7岁9个月，被小新说成“和比自己小八岁的男人结婚的惠子阿姨”。兴趣是网上拍卖，喜欢油腻的料理、跟美冴煲电话粥。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/btws2.jpg" alt="Character 1">
+      <h2 class="character-name">本田悟史<br>（ほんだ さとし）</h2>
+      <p class="character-description">惠子的丈夫，21岁~22岁左右。相貌英俊，是一名小有名气的插画师，个性温和，有些稚气。喜欢动画，是一位<a href="rw4.html">动感超人</a>和<a href="dgcr.html">康打姆机器人</a>的粉丝，收藏了不少动感超人及康打姆机器人的玩具。对吃的问题态度十分强硬，轻食主义者，饮食口味不重。</p>
+    </div>
+     <div class="character-card">
+      <img class="character-image" src="img/btq.jpg" alt="Character 1">
+      <h2 class="character-name">本田齐<br>（ほんだ ひとし）</h2>
+      <p class="character-description">本田惠子和本田悟史的儿子，昵称“小齐”。和新之助长得很像，总是笑。比<a href="yyxzz.html">向日葵</a>小。虽然在动画中还是个0岁的婴儿，但在漫画原作中慢慢成长起来了，变得会说话，上了游泳学校。</p>
+    </div>
+    <div class="character-card">
+      <img class="character-image" src="img/zskwh.jpg" alt="Character 1">
+      <h2 class="character-name">最上川文惠<br>(もがみがわふみえ)</h2>
+      <p class="character-description">11岁，双叶小学五年级学生，惠子哥哥的女儿，学习成绩极差，曾被<a href="lbxx.html">野原新之助</a>亲过脸颊。性格乖僻，对新之助没有好感，态度冷淡。喜欢恋爱电视剧最讨厌的有五件事。在理科考试中只取得30分，成绩不太好。</p>
+    </div>
+  </div>
+
+</body>
+</html>

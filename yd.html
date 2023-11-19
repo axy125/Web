@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+    <title>与妈妈的约定</title>
+    <style>
+      body {
+        background-image:url(img/8.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+      }
+      .character {
+        border-radius: 5px;
+        width: 170px;
+        height: 170px;
+        border: 2px solid #EEE8AA;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        font-size: 20px;
+        position: absolute;
+        margin-top: -5px;
+        transition: all;
+      }
+      .character:hover{
+      	transform: scale(1.1);
+      }
+      div{
+		   font-family:"华文楷体"; 
+		   width:250px;     
+		   padding:5px;
+		   font-size: 25px;
+		   color:#EEE8AA;
+		   margin: -5px auto; 
+		   margin-right: 1px;
+		   text-align: center; 
+		   border:1px solid #CCCCCC;  
+		   box-shadow:3px 3px 6px #E9967A;  
+		   writing-mode:vertical-rl;/*属性定义了文本在水平或垂直方向上如何排布*/
+		}
+		.aa{
+			float:right;
+			margin-top: 25px;
+			margin-right: 20px;
+			animation:anim 5s linear infinite;
+		}
+		@keyframes anim
+  {
+    15%{ transform:translateX(-5px) rotate(-3deg);}/*15表示动画在动画时间轴上的时间点，动画的进程百分比，对元素进行水平平移，向左移动5px，逆时针旋转3度*/
+    20%{ transform:translateX(1px) rotate(3deg);}
+    35%{ transform:translateX(-5px) rotate(-1deg);}
+    50%{ transform:translateX(1px) rotate(3deg);}
+  }
+    </style>
+  </head>
+  <body>    
+  	<div>
+   		<h4>与妈妈的约定条款</h4>
+   		<p>
+      		妈妈，你回来了:)<br>是我回来了！<br>也有这种说法～<br>也可以这样说。
+   		</p>
+	</div>
+    <div class="character" style="top: 1%; left: 1%;background-image: url(img/yd1.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 1%; left: 18%;background-image: url(img/yd2.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 1%; left: 35%;background-image: url(img/yd3.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 35%; left: 1%;background-image: url(img/yd4.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 35%; left: 18%;background-image: url(img/yd5.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 35%; left: 35%;background-image: url(img/yd6.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 69%; left: 1%;background-image: url(img/yd7.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 69%; left: 18%;background-image: url(img/yd8.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <div class="character" style="top: 69%; left: 35%;background-image: url(img/yd9.jpg);background-repeat:no-repeat ;background-size:100% 100%;"></div>
+    <a href="javascript:history.back(-1)"> <img class="aa" src="img/yyxzz1.png"/></a>
+  </body>
+</html>

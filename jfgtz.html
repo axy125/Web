@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	 <link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+  <title>人物介绍</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url(img/3.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: lightblue;
+    }
+    .person-container {
+      max-width: 800px;/*最大宽度*/
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .person {
+      display: flex;
+      align-items: center;/*交叉轴上对齐子元素，垂直居中*/
+      background-color: lightgoldenrodyellow;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+    .person img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      transition: transform 0.3s ease;/*元素的样式发生变化时添加过渡效果，持续时间0.3s的过渡效果平滑过渡到新样式，开始和结束时较慢*/
+    }
+    .person:hover img{
+    	 transform: scale(1.1);/*放大元素的尺寸为原始的1.1倍*/
+    }
+    .person-details {
+      display: flex;
+      align-items: center;
+      flex-direction: column;/*子元素将以垂直方向从上到下排列*/
+      text-align: center;
+      flex-grow: 1;/*子元素将以相等的比例扩展，填充弹性容器中剩余空间
+                  假设容器的宽度是 300px，子元素的初始宽度是 100px，如果容器还有剩余空间，该空间将以相等的比例分配给所有子元素。
+                  每个子元素将获得额外的宽度，使它们平均分布并填充容器的剩余空间。*/
+      justify-content: center;
+    
+    }
+    .person .name {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+      align-content: center;
+    }
+    .person .description {
+      line-height: 1.5;/*设置文本行的行高为字体大小的1.5倍*/
+    }
+    .aa{
+	top:450px;
+	left:1050px;
+	position: fixed;
+}
+a{
+	text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <h1 id="top">鸡飞狗跳庄(またずれそう)</h1>
+  <div class="person-container">
+    <div class="person">
+      <img src="img/wt1.jpg" alt="人物3">
+      <div class="person-details">
+        <h2 class="name">玄武岩男（げんぶ いわお）</h2>
+        <p class="description">又名苏珊小雪，是个变性人，鸡飞狗跳庄204号房间（漫画版），已婚，有妻子，第三性公关。</p>
+      </div>
+    </div>
+  <div class="person">
+      <img src="img/h1.jpg" alt="人物3">
+      <div class="person-details">
+        <h2 class="name">屈底厚子くつぞこ あつこ）</h2>
+        <p class="description">鸡飞狗跳庄205室的住户。丈夫屈底厚志，是货车司机，女儿屈底厚美，视美冴为打理家务的学习对象。正如其名，喜欢穿厚底鞋。行事风格和衣着都很时尚。追求速度的飙车狂，驾驶汽车时很粗暴，会让同乘的人感到害怕。</p >
+      </div>
+    </div>
+    <div class="person">
+      <img src="img/hm1.jpg" alt="人物3">
+      <div class="person-details">
+        <h2 class="name">屈底厚美（くつぞこ アツミ）</h2>
+        <p class="description">2岁的辣妹，喜欢穿厚底鞋，个性和妈妈厚子一样，喜欢时尚，经常与母亲穿母女装。和野原向日葵关系很好。有时不听话，还有扣鼻屎的习惯，此时就会被厚子责备。比起吃水果味道的果冻，更喜欢吃水果。</p >
+      </div>
+    </div>
+     <div class="person">
+      <img src="img/wtjz.jpg" alt="人物3">
+      <div class="person-details">
+        <h2 class="name">污田急痣（おだ きゅうじ）</h2>
+        <p class="description">鸡飞狗跳庄204号房间，埼玉县警察，为了秘密监视毒品贩子，装成会搞笑的败家子，爱乱花钱刷太多卡而搞得家里破产，连房子都要卖掉，而且得了每隔五分钟就会说冷笑话的冷笑话病。曾去小新的幼儿园宣导不可以跟不认识的陌生人一起走。</p >
+      </div>
+    </div>
+    <div class="person">
+      <img src="img/kzwjz.jpg" alt="人物3">
+      <div class="person-details">
+        <h2 class="name">苦汁屋京助（にがりや きょうすけ）</h2>
+        <p class="description">鸡飞狗跳庄204号房间，埼玉县警察，麻药取缔课刑警，为了秘密监视毒品贩子，装成右手臂骨折暂居胯下痛公寓。曾去小新的幼儿园宣导不可以跟不认识的陌生人一起走。被邻居认为是污田急痣的父亲，并且因为长得丑太太跟别人走掉（事实上家里有个心爱的老婆）。</p>
+      </div>
+    </div>
+    <div class="person">
+      <img src="img/yjly.png" alt="人物2">
+      <div class="person-details">
+        <h2 class="name">役津栗优（やくつくり ゆう）</h2>
+        <p class="description">鸡飞狗跳庄203室租客。性格害羞，说话温柔，眯眯眼，有惊人的易容术，声音也会随着易容的角色而改变。她必须化上妆才能发挥出高超的演技水平，同时个性行为也会依据化妆改变。梦想成为职业演员，但由于性格害羞，一直没办法后来被小新改变，后搬到剧团宿舍去住，离开了公寓。</p >
+      </div>
+    </div>
+    <div class="person">
+      <img src="img/sl1.png" alt="人物3">
+      <div class="person-details">
+        <h2 class="name">四郎（よんろう）</h2>
+        <p class="description">鸡飞狗跳庄201室的住户。脸皮很厚，常到野原家蹭饭。四郎有一位哥哥，因为考本科时极为认真，又称拼命三郎，考上东京大学。四郎和小新两家人的房间墙壁上开了个洞，新之助经常闯入妨碍学习。有一次，美冴还卡在了洞里。易胖体质，驾驶技术苦手：因急刹车让野原家的车（自动车）熄火，驾驶技术极差。恋爱苦手，四郎似乎缺少恋爱的运气。</p >
+      </div>
+    </div>
+    <div class="person">
+      <img src="img/yey.jpg" alt="人物3">
+      <div class="person-details">
+        <a href="yyxzz.html"><h2 class="name">野原一家（クレヨンしんちゃん）</h2></a>
+        <p class="description">有一天，野原家的房屋因为受到台风影响损坏需要整修，在整修时厨房的瓦斯炉点不起火而出现漏气，小新正巧在这时点起打火机而引爆了瓦斯，原本的野原家因而被毁。由于房子气爆，野原家非常绝望，房子需要用火灾保险金来重建，只好住在这里。</p >
+      </div>
+    </div>
+     <div class="person">
+      <img src="img/dw.jpg" alt="人物1">
+      <div class="person-details">
+      	<h2 class="name">大屋主代（おおや ぬしよ）</h2>
+        <p class="description">鸡飞狗跳庄的房东，鸡飞狗跳庄1楼102室，49岁。曾经是助产士，三十年前丈夫与女儿因车祸丧生，留下了这栋鸡飞狗跳庄公寓赚取租金过活,后来也有常常到野原家找小葵玩。小气，泼辣，嘴硬。但也有体恤的一面。兴趣是玩堆假牙积木，但常常被楼上的小新一家打扰。装作不喜欢小孩，但最后被小葵感动出真性情。喜欢突击检查房客，美冴为了防止墙上的大洞被发现而经常阻止她闯入。有一次因为感冒加上生房客的气导致昏倒在家门口，被野原太太交房租时发现，并受房客们照顾。曾帮助吉永绿老师生产。</p>
+      </div>
+    </div>
+  </div>
+<a href="#top"</a><img class="aa"src="img/fh.png" height="150px" width="150px">
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" type="image/x-icon" href="img/lbxx.ico"/>
+<title>动感超人</title>
+<style>
+    .container {
+      display: flex;
+      height:325px;
+    }
+    .header {
+    background-color: #FAFAD2;
+    padding: 20px;
+    text-align: center;
+    }
+    .topnav {
+    overflow: hidden;
+    background-color: #FFA07A;
+    }
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    .topnav a:hover {
+    background-color: #E0FFFF;
+    color: black;
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    .column:nth-child(1) { /*首先找到所有当前元素的兄弟元素，然后按照位置先后顺序从 1开始排序*/
+      flex: 2;
+      background-color:#FFE4E1;
+    }
+    .row {
+      display: flex;
+      margin-top: -10px;
+      margin-right: -10px;
+      height:168px;
+      margin-left: -10px;
+    }
+    .row .column {
+      flex: 1;/*指定flex布局的弹性因子，设置为1表示元素可以根据可用空间进行伸缩，以填充空间*/
+      padding: 20px;
+    }
+    .footer {
+    background-color: #E0FFFF;
+    padding: 1px;
+    text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+  <h1>动感超人</h1>
+  <p>动感超人，哔哔哔！</p>
+</div>
+<div class="topnav">
+  <a href="index.html">主页</a>
+  <a href="dgcr.html">朋友</a>
+  <a href="rwj.html">人物</a>
+</div>
+  <div class="container">
+    <div class="column">
+      <h2>动感超人</h2>
+      <p>动感超人主角“乡刚太郎”在一次车祸中险些丧命。他父亲看到乡刚太郎出事后，就以乡刚太郎为原型创作出动感超人。从此以后，乡刚太郎就成为了与邪恶势力作斗争的动感超人。<br>独门绝技：动感铁拳，动感光波，动感光波台风，动感回旋闪电，动感光碟，动感跳跃。<br>敌人：黑暗军团：终极BOSS-黑面四天王。麻雀之泪：终极BOSS-兹拜因巴哈。兰波党：终极BOSS-Z魔王。杂乱敌人：无统一组织，如骷髅党、高叉泳装魔王、火柴怪人等。</p >
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <h2>樱咪咪子</h2>
+          <p>动感超人的搭档，经常被坏人挟持当人质。</p >
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h2>北春日部博士</h2>
+          <p>北春日部博士为动感超人研发新武器和招式，也发明其他物品。</p >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  <p>动感超人</p>
+</div>
+</body>
+</html>
